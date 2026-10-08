@@ -4,38 +4,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="A personal health record with symptom history, recorded laboratory results and anonymised reports.">
+  <meta name="description" content="Lab results, reports and clinical history.">
   <meta name="theme-color" content="#174c40">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
-  <title>Health record · Symptoms, results & reports</title>
+  <title>HealthDB</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261008-2">
-  <script src="app.js?v=20261008-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261008-3">
+  <script src="app.js?v=20261008-3" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#labs"><span class="brand-mark" aria-hidden="true">+</span> Health record</a>
-    <nav aria-label="Main navigation"><a href="#labs">Lab history</a><a href="#reports">Reports</a><a href="#overview">Clinical history</a></nav>
-    <span class="edition">Snapshot · 8 Oct 2026</span>
+    <a class="brand" href="#labs">HealthDB</a>
+    <nav aria-label="Main navigation"><a href="#labs">Labs</a><a href="#reports">Reports</a><a href="#overview">History</a></nav>
   </header>
   <main id="main">
     <section class="lab-section" id="labs" aria-labelledby="lab-heading">
-      <div class="section-heading"><div><p class="eyebrow">Recorded laboratory results</p><h1 id="lab-heading">Explore the lab history</h1><p class="section-description">Search a test to see its results over time, with its recorded unit and each collection's laboratory interval.</p></div><div class="data-stats" id="data-stats" aria-live="polite">Loading results…</div></div>
-      <p class="data-note">This is a snapshot of a personally maintained record. Entries have not all been independently checked against original reports. The source stores units per test, rather than per collection; methods may differ over time. Laboratory labels are anonymised; consumer genetic proxies are labelled separately.</p>
+      <div class="section-heading"><h1 id="lab-heading">Labs</h1><div class="data-stats" id="data-stats" aria-live="polite">Loading…</div></div>
       <div class="lab-workspace">
-        <aside class="test-browser" aria-label="Choose a laboratory test"><label for="test-search">Find a test</label><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="test-search" type="search" placeholder="ALP, copper, CRP…" autocomplete="off"></div><label for="category-filter" class="sr-only">Filter by category</label><select id="category-filter"><option value="">All categories</option></select><p id="test-count" class="test-count" aria-live="polite"></p><div id="test-list" class="test-list" role="group" aria-label="Matching tests"></div></aside>
-        <div class="test-detail" id="test-detail"><div class="test-heading"><div><p id="test-category" class="eyebrow"></p><h3 id="test-name">Loading…</h3><p id="test-unit" class="muted"></p></div><button id="share-test" class="quiet-button" type="button">Copy test link</button></div><div id="latest-results" class="latest-results"></div><div id="chart" class="chart"></div><p id="chart-note" class="chart-note"></p><div class="table-heading"><h4>Collection history</h4><label class="check-label"><input id="outside-only" type="checkbox"> Outside recorded range</label></div><div class="table-scroll"><table><caption id="table-caption" class="sr-only">Recorded test results</caption><thead><tr><th scope="col">Date</th><th scope="col">Result</th><th scope="col">Recorded range</th><th scope="col">Comparison</th><th scope="col">Source</th></tr></thead><tbody id="result-rows"></tbody></table></div><p id="row-note" class="small-note"></p><button id="show-all" class="quiet-button" type="button" hidden>Show all results</button></div>
-      </div><p id="load-error" role="alert" hidden></p>
+        <aside class="test-browser" aria-label="Tests">
+          <label for="test-search">Search</label>
+          <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="test-search" type="search" placeholder="ALP, copper, CRP…" autocomplete="off"></div>
+          <label for="category-filter" class="sr-only">Category</label><select id="category-filter"><option value="">All categories</option></select>
+          <p id="test-count" class="test-count" aria-live="polite"></p><div id="test-list" class="test-list" role="group" aria-label="Tests"></div>
+        </aside>
+        <div class="test-detail" id="test-detail">
+          <div class="test-heading"><div><p id="test-category" class="eyebrow"></p><h2 id="test-name">Loading…</h2><p id="test-unit" class="muted"></p></div><button id="share-test" class="quiet-button" type="button">Copy link</button></div>
+          <div id="latest-results" class="latest-results"></div><div id="chart" class="chart"></div><p id="chart-note" class="chart-note"></p>
+          <div class="table-heading"><h3>Results</h3><label class="check-label"><input id="outside-only" type="checkbox"> Outside range</label></div>
+          <div class="table-scroll"><table><caption id="table-caption" class="sr-only">Results</caption><thead><tr><th scope="col">Date</th><th scope="col">Result</th><th scope="col">Range</th><th scope="col">Status</th><th scope="col">Lab</th></tr></thead><tbody id="result-rows"></tbody></table></div>
+          <p id="row-note" class="small-note"></p><button id="show-all" class="quiet-button" type="button" hidden>All results</button>
+        </div>
+      </div>
+      <p id="load-error" role="alert" hidden></p>
     </section>
-    <section class="report-section" id="reports" aria-labelledby="reports-heading"><div class="section-heading"><div><p class="eyebrow">Anonymised clinical documents</p><h2 id="reports-heading">Reports to read alongside the history</h2><p class="section-description">Anonymised excerpts from original scan reports, plus a clearly labelled left-knee transcription. Open an image or PDF to read the report.</p></div><button class="quiet-button" id="share-reports" type="button">Copy reports link</button></div><div id="report-grid" class="report-grid"></div><a class="pdf-link" href="assets/reports/anonymised-reports.pdf?v=20261008-2" target="_blank" rel="noopener">Download all reports as one PDF <span aria-hidden="true">↗</span></a></section>
-<section class="overview-heading" id="overview"><p class="eyebrow">Personal observations and investigations</p><h2>Symptoms &amp; clinical history</h2><p class="hero-intro">Persistent pain and restricted movement after minor loads, affecting several sites. The underlying cause remains unresolved.</p></section>
-    <section class="case-layout" aria-labelledby="case-heading">
-      <div class="case-main"><p class="eyebrow">The clinical question</p><h2 id="case-heading">What explains the shared pattern?</h2><p id="case-summary" class="body-copy">Loading the symptom history…</p><ul id="observations" class="observations"></ul><details class="case-details"><summary>Working hypotheses &amp; treatments tried</summary><div class="details-body"><h3>Patient's leading hypothesis</h3><p id="leading-hypothesis"></p><p id="other-hypotheses" class="muted"></p><h3>Treatments tried</h3><ul id="treatments" class="treatment-list"></ul></div></details><div class="questions"><h3>Questions for clinical review</h3><ol id="questions"></ol></div></div>
-      <aside class="findings" aria-labelledby="findings-heading"><p class="eyebrow">Documented findings &amp; assessments</p><h2 id="findings-heading">What is already known</h2><div id="findings"></div><p class="small-note">Findings, patient observations and proposed explanations are distinguished. This page is a personal record, not a confirmed unifying diagnosis.</p></aside>
+    <section class="report-section" id="reports" aria-labelledby="reports-heading">
+      <div class="section-heading"><h2 id="reports-heading">Reports</h2><button class="quiet-button" id="share-reports" type="button">Copy link</button></div>
+      <div id="report-grid" class="report-grid"></div>
+      <a class="pdf-link" href="assets/reports/anonymised-reports.pdf?v=20261008-3" target="_blank" rel="noopener">All reports (PDF)</a>
     </section>
+    <section class="history-section" id="overview" aria-labelledby="history-heading">
+      <h2 id="history-heading">History</h2>
+      <details class="case-details"><summary>Symptoms</summary><div class="details-body"><p id="case-summary">Loading…</p><ul id="observations" class="observations"></ul></div></details>
+      <details class="case-details"><summary>Findings</summary><div id="findings" class="details-body"></div></details>
+      <details class="case-details"><summary>Hypotheses</summary><div class="details-body"><h3>Patient hypothesis</h3><p id="leading-hypothesis"></p><div id="other-hypotheses"></div></div></details>
+      <details class="case-details"><summary>Treatments</summary><div class="details-body"><ul id="treatments" class="treatment-list"></ul></div></details>
+      <details class="case-details"><summary>Questions</summary><div class="details-body"><ol id="questions"></ol></div></details>
+    </section>
+    <details class="data-notes"><summary>Data notes</summary><ul>
+      <li>Personally maintained; some entries have not been checked against original reports.</li>
+      <li>Units are stored per test. Methods and reference ranges may vary.</li>
+      <li>Lab names are anonymised. Consumer genetic reports are labelled separately.</li>
+      <li>Only exact numbers are plotted and compared. Other values remain in the table; same-date entries are retained.</li>
+      <li>Reports are anonymised excerpts. The left-knee report is a labelled transcription.</li>
+      <li>Patient hypotheses are unconfirmed.</li>
+    </ul></details>
   </main>
-  <footer><span>Health record · Personal observations and recorded investigations</span><span>Updated 8 October 2026 · Public snapshot</span></footer>
+  <footer>Updated 8 Oct 2026</footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

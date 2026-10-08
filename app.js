@@ -1,7 +1,7 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const assetUrl = (path) => `${path}?v=20261008-2`;
+const assetUrl = (path) => `${path}?v=20261008-3`;
 const dateFormat = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const numberFormat = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 20 });
 const state = { markers: [], selected: null, showAll: false, toastTimer: null };
@@ -15,6 +15,7 @@ const numeric = (value) => typeof value === "number" && Number.isFinite(value);
 const dateValue = (date) => Date.parse(date + "T12:00:00Z");
 const formatDate = (date) => dateFormat.format(new Date(dateValue(date)));
 const formatValue = (value) => value === null ? "Not recorded" : numeric(value) ? numberFormat.format(value) : String(value);
+const formatSource = (source) => source.replace(/^Laboratory /, "Lab ");
 function rangeText(result) {
   if (numeric(result.low) && numeric(result.high)) return `${formatValue(result.low)}–${formatValue(result.high)}`;
   if (numeric(result.low)) return `≥ ${formatValue(result.low)}`;
@@ -26,7 +27,7 @@ function comparison(result) {
   if (numeric(result.low) && result.value < result.low) return { label: "Below range", className: "low" };
   if (numeric(result.high) && result.value > result.high) return { label: "Above range", className: "high" };
   if (numeric(result.low) && numeric(result.high)) return { label: "Within range", className: "within" };
-  if (numeric(result.low) || numeric(result.high)) return { label: "Meets recorded limit", className: "within" };
+  if (numeric(result.low) || numeric(result.high)) return { label: "Meets limit", className: "within" };
   return { label: "No range", className: "none" };
 }
 function badge(result) {
@@ -45,7 +46,7 @@ function renderCase(data) {
   $("leading-hypothesis").textContent = data.hypotheses.leading;
   $("other-hypotheses").replaceWith(make("ul", undefined, "hypothesis-list"));
   const hypotheses = document.querySelector(".hypothesis-list");
-  hypotheses.before(make("h3", "Other explanations considered"));
+  hypotheses.before(make("h3", "Other hypotheses"));
   data.hypotheses.others.forEach((text) => hypotheses.append(make("li", text)));
   data.treatments.forEach((treatment) => {
     const item = make("li");
@@ -66,19 +67,24 @@ function renderCase(data) {
     image.loading = "lazy";
     thumbnail.append(image);
     const copy = make("div", undefined, "report-copy");
-    copy.append(make("p", `${report.kind} · ${formatDate(report.date)}`, "report-kind"), make("h3", report.title), make("p", report.detail));
-    const link = make("a", "Open report image ↗");
+    const kind = report.kind === "Report transcription" ? "Transcription" : "Original excerpt";
+    copy.append(make("p", `${formatDate(report.date)} · ${kind}`, "report-kind"), make("h3", report.title));
+    const links = make("div", undefined, "report-links");
+    const link = make("a", "Image");
+    link.setAttribute("aria-label", `Image: ${report.title}`);
     link.href = assetUrl(report.image);
     link.target = "_blank";
     link.rel = "noopener";
-    copy.append(link);
+    links.append(link);
     if (report.pdf) {
-      const pdf = make("a", "Download PDF ↗", "report-pdf");
+      const pdf = make("a", "PDF");
+      pdf.setAttribute("aria-label", `PDF: ${report.title}`);
       pdf.href = assetUrl(report.pdf);
       pdf.target = "_blank";
       pdf.rel = "noopener";
-      copy.append(pdf);
+      links.append(pdf);
     }
+    copy.append(links);
     if (report.pages && report.pages.length > 1) {
       const pages = make("div", undefined, "report-pages");
       report.pages.forEach((path, index) => {
@@ -101,7 +107,7 @@ function renderList() {
   const matches = state.markers.filter((marker) => (!category || marker.category === category) && `${marker.name} ${marker.unit}`.toLocaleLowerCase().includes(search));
   $("test-count").textContent = `${matches.length} of ${state.markers.length} tests`;
   $("test-list").replaceChildren();
-  if (!matches.length) $("test-list").append(make("p", "No matching tests. Try another name or category.", "small-note"));
+  if (!matches.length) $("test-list").append(make("p", "No tests", "small-note"));
   matches.forEach((marker) => {
     const button = make("button", undefined, "test-button");
     button.type = "button";
@@ -118,13 +124,13 @@ function selectMarker(marker, updateUrl = true) {
   $("outside-only").checked = false;
   $("test-category").textContent = marker.category;
   $("test-name").textContent = marker.name;
-  $("test-unit").textContent = marker.unit ? `Recorded test unit: ${marker.unit}` : "Unit not recorded";
+  $("test-unit").textContent = marker.unit;
   $("table-caption").textContent = `${marker.name}: recorded collection history`;
   const latest = marker.results[marker.results.length - 1];
   const main = make("div", undefined, "latest-main");
-  main.append(make("div", formatValue(latest.value), "latest-value"), make("span", "Latest recorded result", "latest-label"));
+  main.append(make("div", formatValue(latest.value), "latest-value"), make("span", "Latest", "latest-label"));
   const meta = make("div", undefined, "latest-meta");
-  meta.append(make("div", formatDate(latest.date)), make("div", `Recorded range: ${rangeText(latest)}`), make("div", latest.source));
+  meta.append(make("div", formatDate(latest.date)), make("div", `Range: ${rangeText(latest)}`), make("div", formatSource(latest.source)));
   $("latest-results").replaceChildren(main, meta, badge(latest));
   renderChart(marker);
   renderRows();
@@ -147,19 +153,19 @@ function renderRows() {
     row.append(make("td", formatDate(result.date)), make("td", formatValue(result.value)), make("td", rangeText(result)));
     const statusCell = make("td");
     statusCell.append(badge(result));
-    row.append(statusCell, make("td", result.source));
+    row.append(statusCell, make("td", formatSource(result.source)));
     $("result-rows").append(row);
   });
   if (!shown.length) {
-    const cell = make("td", "No exact numerical results outside their recorded limits.");
+    const cell = make("td", "No results");
     cell.colSpan = 5;
     const row = make("tr");
     row.append(cell);
     $("result-rows").append(row);
   }
-  $("row-note").textContent = `Showing ${shown.length} of ${matches.length} ${outside ? "matching " : ""}results. Comparisons use each result's recorded limits; qualitative and comparison-prefixed values are not assigned a range status. Same-date entries are preserved.`;
+  $("row-note").textContent = `${shown.length} of ${matches.length} results`;
   $("show-all").hidden = matches.length <= 10;
-  $("show-all").textContent = state.showAll ? "Show latest 10" : `Show all ${matches.length} results`;
+  $("show-all").textContent = state.showAll ? "Latest 10" : `All ${matches.length}`;
 }
 
 const svgNS = "http://www.w3.org/2000/svg";
@@ -173,8 +179,8 @@ function renderChart(marker) {
   const points = marker.results.filter((result) => numeric(result.value));
   $("chart").replaceChildren();
   if (!points.length) {
-    $("chart").append(make("p", "This test has qualitative or comparison-prefixed results. Read the recorded values in the table.", "empty-chart"));
-    $("chart-note").textContent = "No exact numerical values are available to plot.";
+    $("chart").append(make("p", "No numeric values", "empty-chart"));
+    $("chart-note").textContent = "";
     return;
   }
   const width = 720, height = 245, left = 54, right = 18, top = 20, bottom = 36;
@@ -228,7 +234,8 @@ function renderChart(marker) {
   });
   $("chart").append(svg);
   const omitted = marker.results.length - points.length;
-  $("chart-note").textContent = `Green: exact numerical results. Grey: each collection's recorded interval when both limits exist. Connecting lines guide the eye; methods can differ. ${omitted ? `${omitted} qualitative, comparison-prefixed or missing ${omitted === 1 ? "value is" : "values are"} retained in the table.` : "All recorded values are plotted."}`;
+  $("chart-note").replaceChildren(make("span", "Results", "legend-results"), make("span", "Reference range", "legend-range"));
+  if (omitted) $("chart-note").append(make("span", `${omitted} unplotted`));
 }
 
 async function copyLink(section, testKey) {
@@ -249,7 +256,7 @@ async function copyLink(section, testKey) {
     copied = document.execCommand("copy");
     input.remove();
   }
-  $("toast").textContent = copied ? "Link copied — ready to paste" : "Copy the page address from your browser to share it.";
+  $("toast").textContent = copied ? "Copied" : "Copy the browser address.";
   $("toast").classList.add("show");
   clearTimeout(state.toastTimer);
   state.toastTimer = setTimeout(() => $("toast").classList.remove("show"), 3500);
@@ -263,7 +270,7 @@ async function load() {
     renderCase(caseData);
     state.markers = labs.markers;
     $("data-stats").replaceChildren();
-    [[numberFormat.format(labs.resultCount), "results"], [labs.markerCount, "tests"], [`${labs.firstDate.slice(0, 4)}–${labs.lastDate.slice(0, 4)}`, "recorded history"]].forEach(([value, label]) => {
+    [[numberFormat.format(labs.resultCount), "results"], [labs.markerCount, "tests"], [`${labs.firstDate.slice(0, 4)}–${labs.lastDate.slice(0, 4)}`, "dates"]].forEach(([value, label]) => {
       const stat = make("div", undefined, "stat");
       stat.append(make("strong", value), make("span", label));
       $("data-stats").append(stat);
@@ -283,11 +290,11 @@ async function load() {
     $("share-reports").addEventListener("click", () => copyLink("reports"));
   } catch (error) {
     console.error(error);
-    $("load-error").textContent = "The health record could not be loaded. Please refresh the page. The report PDF can still be opened below.";
+    $("load-error").textContent = "Could not load. Refresh the page.";
     $("load-error").hidden = false;
     $("test-detail").hidden = true;
     $("data-stats").textContent = "Data unavailable";
-    $("case-summary").textContent = "The symptom summary could not be loaded. Please refresh the page.";
+    $("case-summary").textContent = "Could not load. Refresh the page.";
   }
 }
 load();
