@@ -1,0 +1,236 @@
+{
+  "summary": "I have recurrent pain after minor stretching or repetitive loading, followed by strong involuntary muscle tightening and restricted movement. Similar pain, triggering and slow recovery occur across my knees, elbows, ankles, wrists and fingers. Typing causes pain over the backs of finger joints, with delayed swelling and stiffness; pressure and massage are painless. My right knee briefly regained straightening before a couch-related trigger caused another setback. I use keyboard pads to cushion key presses. MRI has documented a local right-knee tendon abnormality, while hand investigations have not explained the finger symptoms. I also have markedly low bone density for my age, without a documented fragility fracture. My leading explanation is a shared fascial problem with protective muscle guarding, but no single diagnosis has been confirmed.",
+  "observations": [
+    "Shoulder symptoms began around 2017, an isolated ankle episode in May 2021 and a broader multisite cluster in 2022; finger symptoms were established by 2023. Each region had its own trigger, with similar pain and recovery patterns.",
+    "Stretching and repeated loading can cause prolonged setbacks; rest has helped more than the rehabilitation tried.",
+    "Finger pain is on the backs of the knuckles, usually the middle joints, with delayed typing-related swelling and stiffness.",
+    "Muscles tighten involuntarily and physically resist movement; massage and applied pressure are painless.",
+    "Right-knee straightening briefly returned before a couch-related setback; other regions have regained some or most range and remain vulnerable."
+  ],
+  "findings": [
+    {
+      "title": "Right knee MRI, September 2025",
+      "detail": "The report described severe insertional semimembranosus tendinopathy, a small peritendon ganglion cyst and surrounding oedema, without internal joint derangement or a Baker's cyst. The original central pain behind the knee and the newer medial hamstring-band pain are separate reported locations. I suspect the tendon finding may be secondary to walking with bent knees; that causal interpretation is not established by the MRI."
+    },
+    {
+      "title": "Left knee MRI, September 2026",
+      "detail": "The patient-supplied report text described mild distal semimembranosus muscle oedema at the myotendinous junction, suggesting a subacute low-grade strain. The distal tendon and insertion were normal, with no internal joint derangement. This region's discomfort was reported as minor and secondary to the initiating central pain behind the knee. The displayed document is a labelled transcription because the original PDF was unavailable."
+    },
+    {
+      "title": "Bone mineral densitometry, April 2026",
+      "detail": "Lumbar spine Z-score -3.0, femoral neck -2.6 and total hip -2.0: markedly low bone density for age. No fragility fracture is documented. A shared cause with the soft-tissue symptoms remains a question rather than a demonstrated link."
+    },
+    {
+      "title": "Hand investigations",
+      "detail": "Hand X-rays in 2023, ultrasound in October 2025, dual-energy CT in November 2025 and right-hand/wrist MRI in May 2026 did not explain the typing-triggered symptoms. The MRI reported no active synovitis, erosion, fracture or tenosynovitis. Resting imaging has not identified the painful tissue during a finger flare."
+    },
+    {
+      "title": "Clinical and laboratory assessment",
+      "detail": "Rheumatology documented no synovitis or typical autoimmune features; RF, CCP, ANA and HLA-B27 testing were negative. Nerve-conduction testing was normal. A September sports-medicine examination documented marked painful guarding with preserved lower-limb power, reflexes and gross sensation. These findings narrow some possibilities without excluding every inflammatory, neurological or metabolic explanation."
+    }
+  ],
+  "hypotheses": {
+    "leading": "My leading hypothesis is a shared fascial susceptibility producing regional pain and secondary involuntary protective muscle guarding. I report that a clinician identified a tight band next to semimembranosus as fascial; its pain, triggering and recovery feel like my other painful sites. Extrapolating that local finding to a multisite fascial condition is my interpretation, not a confirmed diagnosis. Tears, fibrosis or impaired sliding have not been demonstrated across the affected regions.",
+    "others": [
+      "Tendinopathy, local muscle or capsular pathology, with pain-related guarding or secondary restriction.",
+      "I have considered hypophosphatasia (HPP) because of the markedly low bone density and lower-end ALP. The latest ALP was 39 U/L against a 40-120 laboratory range. This marginally low value is not diagnostic; HPP has not been confirmed.",
+      "I have considered pseudogout (CPPD), but a CPP crystal disorder has not been confirmed and the investigations have not demonstrated a convincing multifocal deposition pattern. Existing imaging does not completely exclude CPPD.",
+      "I have considered dysautonomia as a possible contributor because of reported orthostatic symptoms. A causal link to the regional pain, restriction or low bone density has not been established.",
+      "Inflammatory or postinfectious disease not fully excluded by the existing investigations.",
+      "A metabolic, nutritional or other shared susceptibility affecting soft tissues and bone.",
+      "Nerve problems or other neurological and pain-processing mechanisms. A sports physician suggested neurology review for possible functional neurological disorder; this remains an unconfirmed clinical hypothesis."
+    ]
+  },
+  "treatments": [
+    {
+      "name": "Current medication",
+      "detail": "Allopurinol 100 mg daily."
+    },
+    {
+      "name": "Rehabilitation and rest",
+      "detail": "Physiotherapy and rehabilitation trials have not produced clear lasting recovery. Stretching can aggravate symptoms, while rest has helped more. No particular exercise programme has established a diagnosis or permanent recovery."
+    },
+    {
+      "name": "Keyboard pads",
+      "detail": "I use pads to cushion key presses. This records an adaptation tried, without claiming a proven clinical benefit."
+    },
+    {
+      "name": "Knee injection and prednisolone",
+      "detail": "A targeted Marcaine/corticosteroid injection to the right-knee region and an oral prednisolone course produced no noticed benefit. This does not exclude every inflammatory cause."
+    },
+    {
+      "name": "Mestinon, historical trial",
+      "detail": "Reportedly tried without benefit."
+    },
+    {
+      "name": "Amitriptyline, historical trial",
+      "detail": "10 mg nightly from November 2025 to January 2026. No sustained benefit has been established in this summary."
+    },
+    {
+      "name": "Pregabalin, historical trial and later single dose",
+      "detail": "The May 2026 trial caused cognitive slowing, with uncertain sustained benefit. A single reported 150 mg dose on 23 September was followed within 1-2 hours by near-full right-knee extension and left-knee straightening. The change was not formally measured and does not identify the painful tissue or establish lasting recovery."
+    }
+  ],
+  "questions": [
+    "What examination or targeted investigation could identify the painful tissue at the knee and a symptomatic finger, and test whether the sites share a mechanism?",
+    "Could a systemic cause link the low bone density and low-load musculoskeletal symptoms, and which specialty would best coordinate the next assessment?"
+  ],
+  "reports": [
+    {
+      "title": "Left knee MRI",
+      "date": "2026-09-25",
+      "kind": "Report transcription",
+      "image": "assets/reports/left-knee-2026-09-25-transcription.png",
+      "detail": "Labelled transcription of report text supplied by the patient; original PDF unavailable. Reporting attribution removed.",
+      "pages": [
+        "assets/reports/left-knee-2026-09-25-transcription.png"
+      ],
+      "pdf": "assets/reports/left-knee-2026-09-25-transcription.pdf"
+    },
+    {
+      "title": "Right hand and wrist MRI",
+      "date": "2026-05-05",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/right-hand-wrist-mri-2026-05-05-p1.png",
+      "pages": [
+        "assets/reports/right-hand-wrist-mri-2026-05-05-p1.png",
+        "assets/reports/right-hand-wrist-mri-2026-05-05-p2.png"
+      ],
+      "pdf": "assets/reports/right-hand-wrist-mri-2026-05-05.pdf",
+      "detail": "Original report excerpt, including the conclusion continued on its second clinical page. Identifying headers, clinician names and provider details removed."
+    },
+    {
+      "title": "Thoracic and lumbar spine X-ray",
+      "date": "2026-04-24",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/thoracic-lumbar-spine-2026-04-24.png",
+      "pages": [
+        "assets/reports/thoracic-lumbar-spine-2026-04-24.png"
+      ],
+      "pdf": "assets/reports/thoracic-lumbar-spine-2026-04-24.pdf",
+      "detail": "Original clinical history and findings."
+    },
+    {
+      "title": "Bone mineral densitometry",
+      "date": "2026-04-16",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/bone-density-2026-04-16.png",
+      "detail": "Anonymised excerpt from the original report. Findings and conclusions retained; personal and provider details removed.",
+      "pages": [
+        "assets/reports/bone-density-2026-04-16.png"
+      ],
+      "pdf": "assets/reports/bone-density-2026-04-16.pdf"
+    },
+    {
+      "title": "Left leg vein Doppler ultrasound",
+      "date": "2025-12-04",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/left-leg-veins-2025-12-04.png",
+      "pages": [
+        "assets/reports/left-leg-veins-2025-12-04.png"
+      ],
+      "pdf": "assets/reports/left-leg-veins-2025-12-04.pdf",
+      "detail": "Original examination, history, findings and conclusion."
+    },
+    {
+      "title": "Dual-energy CT: hands, elbow, knee and ankle",
+      "date": "2025-11-14",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/dual-energy-ct-2025-11-14-p1.png",
+      "pages": [
+        "assets/reports/dual-energy-ct-2025-11-14-p1.png"
+      ],
+      "pdf": "assets/reports/dual-energy-ct-2025-11-14.pdf",
+      "detail": "Original report excerpt with the complete clinical history, technique, comparisons, findings and conclusion. Identifying headers and clinician/provider details removed."
+    },
+    {
+      "title": "Bilateral hand ultrasound",
+      "date": "2025-10-01",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/bilateral-hand-ultrasound-2025-10-01-p1.png",
+      "pages": [
+        "assets/reports/bilateral-hand-ultrasound-2025-10-01-p1.png"
+      ],
+      "pdf": "assets/reports/bilateral-hand-ultrasound-2025-10-01.pdf",
+      "detail": "Original report excerpt with the complete clinical history, findings and conclusion. Identifying headers and the signature-only source page removed."
+    },
+    {
+      "title": "Right semimembranosus injection and fenestration",
+      "date": "2025-09-27",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/right-semimembranosus-procedure-2025-09-27.png",
+      "pages": [
+        "assets/reports/right-semimembranosus-procedure-2025-09-27.png"
+      ],
+      "pdf": "assets/reports/right-semimembranosus-procedure-2025-09-27.pdf",
+      "detail": "Original ultrasound-guided procedure report."
+    },
+    {
+      "title": "Right knee MRI",
+      "date": "2025-09-13",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/right-knee-2025-09-13.png",
+      "detail": "Anonymised excerpt from the original report. Findings and conclusions retained; personal and provider details removed.",
+      "pages": [
+        "assets/reports/right-knee-2025-09-13.png"
+      ],
+      "pdf": "assets/reports/right-knee-2025-09-13.pdf"
+    },
+    {
+      "title": "Cervical spine MRI",
+      "date": "2024-07-22",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/cervical-spine-2024-07-22.png",
+      "pages": [
+        "assets/reports/cervical-spine-2024-07-22.png"
+      ],
+      "pdf": "assets/reports/cervical-spine-2024-07-22.pdf",
+      "detail": "Original clinical history, technique, findings and conclusion."
+    },
+    {
+      "title": "Right ankle and toes dual-energy CT",
+      "date": "2023-11-25",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/2023-11-25-ankle-toes-dual-energy-ct-page-1.png",
+      "pages": [
+        "assets/reports/2023-11-25-ankle-toes-dual-energy-ct-page-1.png"
+      ],
+      "pdf": "assets/reports/2023-11-25-ankle-toes-dual-energy-ct.pdf",
+      "detail": "Original clinical report showing monosodium urate deposition in the great-toe interphalangeal joint and the second and third toe PIP/DIP joints, without focal bony erosion. Administrative and reporting details removed."
+    },
+    {
+      "title": "Bilateral hand X-rays",
+      "date": "2023-11-10",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/bilateral-hand-xray-2023-11-10-p1.png",
+      "pages": [
+        "assets/reports/bilateral-hand-xray-2023-11-10-p1.png"
+      ],
+      "pdf": "assets/reports/bilateral-hand-xray-2023-11-10.pdf",
+      "detail": "Original report excerpt with the clinical history and all findings preserved. Nonessential age and sex, identifying headers and clinician/provider details removed."
+    },
+    {
+      "title": "Right ankle MRI",
+      "date": "2022-11-17",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/2022-11-17-right-ankle-mri-page-1.png",
+      "pages": [
+        "assets/reports/2022-11-17-right-ankle-mri-page-1.png"
+      ],
+      "pdf": "assets/reports/2022-11-17-right-ankle-mri.pdf",
+      "detail": "Clinical report describing ATFL oedema with preserved fibrillar pattern, compatible with mild sprain injury; no high ankle sprain. Patient and clinician details removed; signature-only second page omitted."
+    },
+    {
+      "title": "Right shoulder and elbow MRI",
+      "date": "2022-02-16",
+      "kind": "Original report excerpt",
+      "image": "assets/reports/2022-02-16-shoulder-elbow-mri-page-1.png",
+      "pages": [
+        "assets/reports/2022-02-16-shoulder-elbow-mri-page-1.png",
+        "assets/reports/2022-02-16-shoulder-elbow-mri-page-2.png"
+      ],
+      "pdf": "assets/reports/2022-02-16-shoulder-elbow-mri.pdf",
+      "detail": "Two clinical pages preserved: suspected shoulder labral tears and low-grade common-extensor tendinosis with minor intrasubstance tearing at the elbow. Administrative headers and reporting details removed."
+    }
+  ]
+}
