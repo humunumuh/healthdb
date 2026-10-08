@@ -1,7 +1,7 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const assetUrl = (path) => `${path}?v=20261008-5`;
+const assetUrl = (path) => `${path}?v=20261008-6`;
 const dateFormat = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const numberFormat = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 20 });
 const state = { markers: [], selected: null, showAll: false, toastTimer: null };

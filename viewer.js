@@ -10,19 +10,35 @@
     return item;
   }
 
+  const opposite = (label) => label.replace(/[LRAPHF]/g, (letter) => ({ L: "R", R: "L", A: "P", P: "A", H: "F", F: "H" })[letter]);
+
+  function orientation(value) {
+    if (!value || typeof value !== "object") return null;
+    const edges = {};
+    for (const edge of ["top", "right", "bottom", "left"]) {
+      const label = value[edge];
+      if (typeof label !== "string" || !/^[LRAPHF]{1,3}$/.test(label)) return null;
+      if (new Set(label).size !== label.length || ["LR", "AP", "HF"].some((axis) => [...axis].every((letter) => label.includes(letter)))) return null;
+      edges[edge] = label;
+    }
+    if (edges.right.length === 1 && edges.bottom.length === 1 && ["LR", "AP", "HF"].some((axis) => axis.includes(edges.right) && axis.includes(edges.bottom))) return null;
+    return opposite(edges.top) === edges.bottom && opposite(edges.left) === edges.right ? edges : null;
+  }
+
   function mount(root, manifest, options = {}) {
     if (!(root instanceof Element)) throw new Error("A viewer container is required.");
     if (root.healthDBScanViewer) root.healthDBScanViewer.destroy();
     const id = `scan-viewer-${++instanceCount}`;
     const baseUrl = new URL(options.baseUrl || location.href, location.href);
-    const toFrame = (frame) => {
+    const toFrame = (frame, defaultOrientation) => {
       const src = typeof frame === "string" ? frame : frame && frame.src;
       if (typeof src !== "string" || !src.trim()) return null;
       try {
         const url = new URL(src, baseUrl);
         if (url.origin !== location.origin || !/^https?:$/.test(url.protocol)) return null;
         if (!/\.(png|jpe?g|webp)$/i.test(url.pathname)) return null;
-        return url.href;
+        const hasOrientation = frame && typeof frame === "object" && Object.hasOwn(frame, "orientation");
+        return { src: url.href, orientation: orientation(hasOrientation ? frame.orientation : defaultOrientation) };
       } catch {
         return null;
       }
@@ -34,7 +50,7 @@
       series: (Array.isArray(study.series) ? study.series : []).map((series, seriesIndex) => ({
         id: String(series.id ?? seriesIndex),
         title: String(series.title || "Series"),
-        frames: (Array.isArray(series.frames) ? series.frames : []).map(toFrame).filter(Boolean),
+        frames: (Array.isArray(series.frames) ? series.frames : []).map((frame) => toFrame(frame, series.orientation)).filter(Boolean),
         startIndex: Number.isInteger(series.startIndex) ? series.startIndex : null
       })).filter((series) => series.frames.length)
     })).filter((study) => study.series.length);
@@ -73,6 +89,14 @@
     const announcement = element("span", "scan-sr-only");
     announcement.setAttribute("role", "status");
     stage.append(scanImage, message, announcement);
+    const orientationLabels = {};
+    for (const edge of ["top", "right", "bottom", "left"]) {
+      const label = element("span", `scan-orientation scan-orientation-${edge}`);
+      label.hidden = true;
+      label.setAttribute("aria-hidden", "true");
+      orientationLabels[edge] = label;
+      stage.append(label);
+    }
 
     const controls = element("div", "scan-controls");
     const position = element("div", "scan-position");
@@ -104,7 +128,10 @@
     bottom.append(hint, zoomControls);
     controls.append(position, slider, bottom);
     const note = element("p", "scan-note", "Display copies · Fixed window settings");
-    view.append(selectors, stage, controls, note);
+    const legend = element("p", "scan-orientation-legend", "L/R left/right · A/P front/back · H/F head/feet");
+    legend.title = "Combined letters indicate an angled image plane, with the main direction first.";
+    legend.hidden = true;
+    view.append(selectors, stage, controls, note, legend);
     root.replaceChildren(view);
 
     let studyIndex = 0;
@@ -144,6 +171,17 @@
 
     function resetView() { zoom = 1; panX = panY = 0; transform(); }
 
+    function showOrientation(edges) {
+      const meanings = { L: "Left", R: "Right", A: "Anterior", P: "Posterior", H: "Head", F: "Feet" };
+      for (const [edge, label] of Object.entries(orientationLabels)) {
+        label.hidden = !edges;
+        label.textContent = edges?.[edge] || "";
+        label.title = edges ? `${edge}: ${[...edges[edge]].map((letter) => meanings[letter]).join(" / ")}` : "";
+      }
+      if (edges) scanImage.setAttribute("aria-description", Object.entries(edges).map(([edge, label]) => `${edge}: ${[...label].map((letter) => meanings[letter]).join(" / ")}`).join("; "));
+      else scanImage.removeAttribute("aria-description");
+    }
+
     function showSlice(index) {
       const series = currentSeries();
       sliceIndex = Math.max(0, Math.min(series.frames.length - 1, index));
@@ -156,8 +194,11 @@
       next.disabled = sliceIndex === series.frames.length - 1;
       announcement.textContent = `${series.title}, slice ${sliceIndex + 1} of ${series.frames.length}`;
       const expected = ++requestId;
-      const src = series.frames[sliceIndex];
+      const frame = series.frames[sliceIndex];
+      const src = frame.src;
       scanImage.hidden = true;
+      showOrientation(null);
+      legend.hidden = !frame.orientation;
       message.hidden = false;
       message.textContent = "Loading image…";
       if (currentLoader) { currentLoader.onload = null; currentLoader.onerror = null; }
@@ -169,15 +210,17 @@
         scanImage.src = src;
         scanImage.hidden = false;
         message.hidden = true;
+        showOrientation(frame.orientation);
         transform();
         for (const neighbor of [sliceIndex - 1, sliceIndex + 1]) {
-          if (series.frames[neighbor]) { const preload = new Image(); preload.src = series.frames[neighbor]; }
+          if (series.frames[neighbor]) { const preload = new Image(); preload.src = series.frames[neighbor].src; }
         }
       };
       loader.onerror = () => {
         if (destroyed || expected !== requestId) return;
         scanImage.removeAttribute("src");
         scanImage.hidden = true;
+        legend.hidden = true;
         message.hidden = false;
         message.textContent = "This image could not be loaded.";
       };

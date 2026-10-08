@@ -46,7 +46,13 @@
             "assets/scans/right-knee-2026-09/series-8/0033.png",
             "assets/scans/right-knee-2026-09/series-8/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "AFL",
+            "right": "LFP",
+            "bottom": "PHR",
+            "left": "RHA"
+          }
         },
         {
           "id": "series-9",
@@ -83,7 +89,13 @@
             "assets/scans/right-knee-2026-09/series-9/0029.png",
             "assets/scans/right-knee-2026-09/series-9/0030.png"
           ],
-          "startIndex": 15
+          "startIndex": 15,
+          "orientation": {
+            "top": "HAL",
+            "right": "LFP",
+            "bottom": "FPR",
+            "left": "RHA"
+          }
         },
         {
           "id": "series-10",
@@ -124,7 +136,13 @@
             "assets/scans/right-knee-2026-09/series-10/0033.png",
             "assets/scans/right-knee-2026-09/series-10/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAR",
+            "right": "PRH",
+            "bottom": "FPL",
+            "left": "ALF"
+          }
         },
         {
           "id": "series-11",
@@ -165,7 +183,13 @@
             "assets/scans/right-knee-2026-09/series-11/0033.png",
             "assets/scans/right-knee-2026-09/series-11/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAR",
+            "right": "PRH",
+            "bottom": "FPL",
+            "left": "ALF"
+          }
         }
       ]
     },
@@ -213,7 +237,13 @@
             "assets/scans/left-knee-2026-09/series-8/0033.png",
             "assets/scans/left-knee-2026-09/series-8/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "AFL",
+            "right": "LHP",
+            "bottom": "PHR",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-9",
@@ -250,7 +280,13 @@
             "assets/scans/left-knee-2026-09/series-9/0029.png",
             "assets/scans/left-knee-2026-09/series-9/0030.png"
           ],
-          "startIndex": 15
+          "startIndex": 15,
+          "orientation": {
+            "top": "HAR",
+            "right": "LHP",
+            "bottom": "FPL",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-10",
@@ -291,7 +327,13 @@
             "assets/scans/left-knee-2026-09/series-10/0033.png",
             "assets/scans/left-knee-2026-09/series-10/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAL",
+            "right": "PLH",
+            "bottom": "FPR",
+            "left": "ARF"
+          }
         },
         {
           "id": "series-11",
@@ -332,7 +374,13 @@
             "assets/scans/left-knee-2026-09/series-11/0033.png",
             "assets/scans/left-knee-2026-09/series-11/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAL",
+            "right": "PLH",
+            "bottom": "FPR",
+            "left": "ARF"
+          }
         }
       ]
     },
@@ -366,7 +414,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-1/0019.png",
             "assets/scans/right-hand-wrist-2026-05/series-1/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HRP",
+            "right": "LHP",
+            "bottom": "FLA",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-2",
@@ -393,7 +447,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-2/0019.png",
             "assets/scans/right-hand-wrist-2026-05/series-2/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HRP",
+            "right": "LHP",
+            "bottom": "FLA",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-3",
@@ -480,7 +540,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-3/0079.png",
             "assets/scans/right-hand-wrist-2026-05/series-3/0080.png"
           ],
-          "startIndex": 40
+          "startIndex": 40,
+          "orientation": {
+            "top": "AH",
+            "right": "LHP",
+            "bottom": "PF",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-4",
@@ -567,7 +633,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-4/0079.png",
             "assets/scans/right-hand-wrist-2026-05/series-4/0080.png"
           ],
-          "startIndex": 40
+          "startIndex": 40,
+          "orientation": {
+            "top": "AH",
+            "right": "LHP",
+            "bottom": "PF",
+            "left": "RFA"
+          }
         },
         {
           "id": "series-5",
@@ -614,7 +686,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-5/0039.png",
             "assets/scans/right-hand-wrist-2026-05/series-5/0040.png"
           ],
-          "startIndex": 20
+          "startIndex": 20,
+          "orientation": {
+            "top": "HRA",
+            "right": "PRF",
+            "bottom": "FLP",
+            "left": "ALH"
+          }
         },
         {
           "id": "series-6",
@@ -641,7 +719,13 @@
             "assets/scans/right-hand-wrist-2026-05/series-6/0019.png",
             "assets/scans/right-hand-wrist-2026-05/series-6/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HRP",
+            "right": "LPH",
+            "bottom": "FLA",
+            "left": "RAF"
+          }
         }
       ]
     },
@@ -703,7 +787,13 @@
             "assets/scans/right-knee-2025-09/series-1/0031.png",
             "assets/scans/right-knee-2025-09/series-1/0032.png"
           ],
-          "startIndex": 16
+          "startIndex": 16,
+          "orientation": {
+            "top": "AFR",
+            "right": "LAF",
+            "bottom": "PHL",
+            "left": "RPH"
+          }
         },
         {
           "id": "series-2",
@@ -745,7 +835,13 @@
             "assets/scans/right-knee-2025-09/series-2/0034.png",
             "assets/scans/right-knee-2025-09/series-2/0035.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAL",
+            "right": "LAF",
+            "bottom": "FPR",
+            "left": "RPH"
+          }
         },
         {
           "id": "series-3",
@@ -786,7 +882,13 @@
             "assets/scans/right-knee-2025-09/series-3/0033.png",
             "assets/scans/right-knee-2025-09/series-3/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAR",
+            "right": "PRH",
+            "bottom": "FPL",
+            "left": "ALF"
+          }
         },
         {
           "id": "series-4",
@@ -827,7 +929,13 @@
             "assets/scans/right-knee-2025-09/series-4/0033.png",
             "assets/scans/right-knee-2025-09/series-4/0034.png"
           ],
-          "startIndex": 17
+          "startIndex": 17,
+          "orientation": {
+            "top": "HAR",
+            "right": "PRH",
+            "bottom": "FPL",
+            "left": "ALF"
+          }
         }
       ]
     },
@@ -898,7 +1006,13 @@
             "assets/scans/right-shoulder-2022-02/series-1/0023.png",
             "assets/scans/right-shoulder-2022-02/series-1/0024.png"
           ],
-          "startIndex": 12
+          "startIndex": 12,
+          "orientation": {
+            "top": "ALF",
+            "right": "LPH",
+            "bottom": "PRH",
+            "left": "RAF"
+          }
         },
         {
           "id": "series-2",
@@ -925,7 +1039,13 @@
             "assets/scans/right-shoulder-2022-02/series-2/0019.png",
             "assets/scans/right-shoulder-2022-02/series-2/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HAL",
+            "right": "PLH",
+            "bottom": "FPR",
+            "left": "ARF"
+          }
         },
         {
           "id": "series-3",
@@ -952,7 +1072,13 @@
             "assets/scans/right-shoulder-2022-02/series-3/0019.png",
             "assets/scans/right-shoulder-2022-02/series-3/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HAL",
+            "right": "PLH",
+            "bottom": "FPR",
+            "left": "ARF"
+          }
         },
         {
           "id": "series-4",
@@ -981,7 +1107,13 @@
             "assets/scans/right-shoulder-2022-02/series-4/0021.png",
             "assets/scans/right-shoulder-2022-02/series-4/0022.png"
           ],
-          "startIndex": 11
+          "startIndex": 11,
+          "orientation": {
+            "top": "HAL",
+            "right": "RPH",
+            "bottom": "FPR",
+            "left": "LAF"
+          }
         },
         {
           "id": "series-5",
@@ -1015,7 +1147,13 @@
             "assets/scans/right-shoulder-2022-02/series-5/0026.png",
             "assets/scans/right-shoulder-2022-02/series-5/0027.png"
           ],
-          "startIndex": 13
+          "startIndex": 13,
+          "orientation": {
+            "top": "HAL",
+            "right": "RPH",
+            "bottom": "FPR",
+            "left": "LAF"
+          }
         }
       ]
     },
@@ -1049,7 +1187,13 @@
             "assets/scans/right-elbow-2022-02/series-1/0019.png",
             "assets/scans/right-elbow-2022-02/series-1/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HAR",
+            "right": "LAH",
+            "bottom": "FPL",
+            "left": "RPF"
+          }
         },
         {
           "id": "series-2",
@@ -1076,7 +1220,13 @@
             "assets/scans/right-elbow-2022-02/series-2/0019.png",
             "assets/scans/right-elbow-2022-02/series-2/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HAR",
+            "right": "LAH",
+            "bottom": "FPL",
+            "left": "RPF"
+          }
         },
         {
           "id": "series-3",
@@ -1103,7 +1253,13 @@
             "assets/scans/right-elbow-2022-02/series-3/0019.png",
             "assets/scans/right-elbow-2022-02/series-3/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HRA",
+            "right": "ARF",
+            "bottom": "FLP",
+            "left": "PLH"
+          }
         },
         {
           "id": "series-4",
@@ -1130,7 +1286,13 @@
             "assets/scans/right-elbow-2022-02/series-4/0019.png",
             "assets/scans/right-elbow-2022-02/series-4/0020.png"
           ],
-          "startIndex": 10
+          "startIndex": 10,
+          "orientation": {
+            "top": "HRA",
+            "right": "ARF",
+            "bottom": "FLP",
+            "left": "PLH"
+          }
         },
         {
           "id": "series-5",
@@ -1167,7 +1329,13 @@
             "assets/scans/right-elbow-2022-02/series-5/0029.png",
             "assets/scans/right-elbow-2022-02/series-5/0030.png"
           ],
-          "startIndex": 15
+          "startIndex": 15,
+          "orientation": {
+            "top": "RPH",
+            "right": "ARH",
+            "bottom": "LAF",
+            "left": "PLF"
+          }
         },
         {
           "id": "series-6",
@@ -1204,7 +1372,13 @@
             "assets/scans/right-elbow-2022-02/series-6/0029.png",
             "assets/scans/right-elbow-2022-02/series-6/0030.png"
           ],
-          "startIndex": 15
+          "startIndex": 15,
+          "orientation": {
+            "top": "RPH",
+            "right": "ARH",
+            "bottom": "LAF",
+            "left": "PLF"
+          }
         }
       ]
     }

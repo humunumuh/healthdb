@@ -9,7 +9,7 @@
     if (started) return;
     started = true;
     try {
-      const response = await fetch("data/scans.json?v=20261008-5");
+      const response = await fetch("data/scans.json?v=20261008-6");
       if (!response.ok) throw new Error("Manifest unavailable");
       const params = new URL(location.href).searchParams;
       const slice = Number(params.get("slice"));
