@@ -9,9 +9,14 @@
     if (started) return;
     started = true;
     try {
-      const response = await fetch("data/scans.json?v=20261008-4");
+      const response = await fetch("data/scans.json?v=20261008-5");
       if (!response.ok) throw new Error("Manifest unavailable");
-      window.HealthDBScanViewer.mount(root, await response.json(), { baseUrl: location.href });
+      const params = new URL(location.href).searchParams;
+      const slice = Number(params.get("slice"));
+      window.HealthDBScanViewer.mount(root, await response.json(), {
+        baseUrl: location.href,
+        initial: { study: params.get("scan"), series: params.get("series"), slice: Number.isInteger(slice) && slice > 0 ? slice : null }
+      });
     } catch {
       const message = document.createElement("p");
       message.className = "scan-empty";

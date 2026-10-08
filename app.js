@@ -1,7 +1,7 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const assetUrl = (path) => `${path}?v=20261008-4`;
+const assetUrl = (path) => `${path}?v=20261008-5`;
 const dateFormat = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const numberFormat = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 20 });
 const state = { markers: [], selected: null, showAll: false, toastTimer: null };
@@ -238,10 +238,15 @@ function renderChart(marker) {
   if (omitted) $("chart-note").append(make("span", `${omitted} unplotted`));
 }
 
-async function copyLink(section, testKey) {
+async function copyLink(section, testKey, scanSelection) {
   const url = new URL(window.location.href);
   url.search = "";
   if (testKey) url.searchParams.set("test", testKey);
+  if (scanSelection) {
+    url.searchParams.set("scan", scanSelection.study);
+    url.searchParams.set("series", scanSelection.series);
+    url.searchParams.set("slice", scanSelection.slice);
+  }
   url.hash = section;
   let copied = false;
   try {
@@ -253,13 +258,13 @@ async function copyLink(section, testKey) {
     input.className = "sr-only";
     document.body.append(input);
     input.select();
-    copied = document.execCommand("copy");
+    try { copied = document.execCommand("copy"); } catch { copied = false; }
     input.remove();
   }
-  $("toast").textContent = copied ? "Copied" : "Copy the browser address.";
+  $("toast").textContent = copied ? "Copied" : url.href;
   $("toast").classList.add("show");
   clearTimeout(state.toastTimer);
-  state.toastTimer = setTimeout(() => $("toast").classList.remove("show"), 3500);
+  state.toastTimer = setTimeout(() => $("toast").classList.remove("show"), copied ? 3500 : 30000);
 }
 
 async function load() {
@@ -288,7 +293,7 @@ async function load() {
     $("show-all").addEventListener("click", () => { state.showAll = !state.showAll; renderRows(); });
     $("share-test").addEventListener("click", () => copyLink("labs", state.selected.key));
     $("share-reports").addEventListener("click", () => copyLink("reports"));
-    $("share-scans").addEventListener("click", () => copyLink("scans"));
+    $("share-scans").addEventListener("click", () => copyLink("scans", null, $("scan-viewer").healthDBScanViewer?.getSelection?.()));
     const sectionId = window.location.hash.slice(1);
     if (["labs", "scans", "reports", "overview"].includes(sectionId)) {
       $(sectionId).scrollIntoView({ behavior: "instant", block: "start" });

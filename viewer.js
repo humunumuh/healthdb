@@ -184,20 +184,21 @@
       loader.src = src;
     }
 
-    function selectSeries(index) {
+    function selectSeries(index, initialSlice = null) {
       seriesIndex = index;
       seriesSelect.value = String(index);
       const series = currentSeries();
-      const initial = series.startIndex === null ? Math.floor((series.frames.length - 1) / 2) : series.startIndex;
+      const initial = Number.isInteger(initialSlice) ? initialSlice - 1 : series.startIndex === null ? Math.floor((series.frames.length - 1) / 2) : series.startIndex;
       resetView();
       showSlice(initial);
     }
 
-    function selectStudy(index) {
+    function selectStudy(index, initialSelection = null) {
       studyIndex = index;
       studySelect.value = String(index);
       seriesSelect.replaceChildren(...studies[index].series.map((series, i) => option(series.title, i)));
-      selectSeries(0);
+      const selectedSeries = initialSelection ? studies[index].series.findIndex((series) => series.id === initialSelection.series) : 0;
+      selectSeries(selectedSeries < 0 ? 0 : selectedSeries, selectedSeries < 0 ? null : initialSelection?.slice);
     }
 
     listen(studySelect, "change", () => selectStudy(Number(studySelect.value)));
@@ -242,9 +243,13 @@
     listen(stage, "pointercancel", endDrag);
     listen(stage, "lostpointercapture", endDrag);
     listen(window, "resize", transform);
-    selectStudy(0);
+    const selectedStudy = studies.findIndex((study) => study.id === options.initial?.study);
+    selectStudy(selectedStudy < 0 ? 0 : selectedStudy, selectedStudy < 0 ? null : options.initial);
 
     const api = {
+      getSelection() {
+        return { study: studies[studyIndex].id, series: currentSeries().id, slice: sliceIndex + 1 };
+      },
       destroy() {
         destroyed = true;
         requestId++;
