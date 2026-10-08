@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Lab results, reports and clinical history.">
+  <meta name="description" content="Lab results, scans, reports and clinical history.">
   <meta name="theme-color" content="#174c40">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
   <title>HealthDB</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261008-3">
-  <script src="app.js?v=20261008-3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261008-4">
+  <link rel="stylesheet" href="scans.css?v=20261008-4">
+  <script src="viewer.js?v=20261008-4" defer></script>
+  <script src="app.js?v=20261008-4" defer></script>
+  <script src="scans.js?v=20261008-4" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#labs">HealthDB</a>
-    <nav aria-label="Main navigation"><a href="#labs">Labs</a><a href="#reports">Reports</a><a href="#overview">History</a></nav>
+    <nav aria-label="Main navigation"><a href="#labs">Labs</a><a href="#scans">Scans</a><a href="#reports">Reports</a><a href="#overview">History</a></nav>
   </header>
   <main id="main">
     <section class="lab-section" id="labs" aria-labelledby="lab-heading">
@@ -38,6 +41,10 @@
       </div>
       <p id="load-error" role="alert" hidden></p>
     </section>
+    <section class="scan-section" id="scans" aria-labelledby="scans-heading">
+      <div class="section-heading"><h2 id="scans-heading">Scans</h2><button class="quiet-button" id="share-scans" type="button">Copy link</button></div>
+      <div id="scan-viewer"><p class="scan-empty">Loading…</p></div>
+    </section>
     <section class="report-section" id="reports" aria-labelledby="reports-heading">
       <div class="section-heading"><h2 id="reports-heading">Reports</h2><button class="quiet-button" id="share-reports" type="button">Copy link</button></div>
       <div id="report-grid" class="report-grid"></div>
@@ -57,6 +64,7 @@
       <li>Lab names are anonymised. Consumer genetic reports are labelled separately.</li>
       <li>Only exact numbers are plotted and compared. Other values remain in the table; same-date entries are retained.</li>
       <li>Reports are anonymised excerpts. The left-knee report is a labelled transcription.</li>
+      <li>Scan images are display copies with fixed window settings; original DICOM files are not included.</li>
       <li>Patient hypotheses are unconfirmed.</li>
     </ul></details>
   </main>

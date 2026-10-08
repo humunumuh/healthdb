@@ -1,6 +1,6 @@
 # Health record
 
-A static, read-only personal health record for clinical discussion. The site contains a symptom summary, recorded laboratory history and anonymised report attachments.
+A static, read-only personal health record for clinical discussion. The site contains recorded laboratory history, a scan viewer, anonymised report attachments and a symptom summary.
 
 ## Data
 
@@ -9,6 +9,8 @@ A static, read-only personal health record for clinical discussion. The site con
 `data/case.json` distinguishes patient observations, documented findings and working hypotheses. It contains no country, age, sex, height or weight fields. The left-knee attachment is explicitly labelled a transcription; the remaining attachments are excerpts from original scan and procedure reports. Each report has an individual PDF, and the combined collection preserves all clinical pages. Patient demographics and identifying patient, clinician and provider details have been removed from the published excerpts.
 
 The site uses laboratory reference intervals as recorded for each result. Comparisons are calculated only for exact numerical values. Charts do not substitute a threshold for results reported as less than or greater than a value. Methods and sources may differ across dates.
+
+`data/scans.json` currently lists the September 2026 right-knee MRI: four series and 132 source-windowed, 8-bit PNG display copies. The exports contain no image metadata or DICOM headers. Every frame was screened for visible text and reviewed visually before release. Original scans are unchanged and are not included in this repository. The viewer supports slice browsing, zoom and pan; it does not provide source-pixel windowing or calibrated measurements. Images load as needed when the scan section is viewed.
 
 ## Hosting
 
