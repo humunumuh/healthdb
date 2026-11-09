@@ -1,0 +1,93 @@
+.id-review{padding:42px 0 48px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
+.id-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.id-heading h2{font-size:clamp(30px,3.5vw,44px);line-height:1.12;margin:8px 0 16px;max-width:700px}
+.id-heading .eyebrow{color:var(--green)}
+.id-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;padding-top:18px}
+.id-intro{max-width:850px;font-size:17px;line-height:1.65;margin:0 0 12px}
+.id-review-date{color:#58655e;font-size:13px;margin:0 0 25px}
+.id-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--pale);border:1px solid var(--line);border-radius:7px;margin:24px 0 32px}
+.id-highlight{padding:21px 23px}
+.id-highlight+.id-highlight{border-left:1px solid #cbd7ca}
+.id-highlight h3{font-family:inherit;font-size:14px;margin:0 0 9px;color:var(--green)}
+.id-highlight p{font-size:14px;line-height:1.6;margin:0}
+.id-symptoms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:22px 0 24px}
+.id-symptom{background:#fffef9;border:1px solid var(--line);border-radius:7px;padding:24px;display:flex;flex-direction:column}
+.id-symptom h3{font-size:27px;margin:3px 0 12px}
+.id-symptom>p:not(.id-label){font-size:14px;line-height:1.7;margin:0 0 18px}
+.id-label{font-size:11px;line-height:1.5;letter-spacing:.025em;color:#657168;margin:0 0 4px}
+.id-card-question{border-top:1px solid var(--line);padding-top:14px;margin-top:auto;font-size:13px;line-height:1.65}
+.id-card-question>strong{color:var(--green);font-size:11px;text-transform:uppercase;letter-spacing:.09em}
+.id-card-question p{margin:5px 0 12px}
+.id-text-button{font:inherit;font-size:13px;font-weight:600;align-self:flex-start;color:var(--green);border:0;border-bottom:1px solid #a6b9a9;background:transparent;padding:5px 0;cursor:pointer}
+.id-references{font-size:11px;font-weight:400;line-height:1.6;display:block;margin-top:5px}
+.id-references a{display:inline-block;color:#526c5d;margin:0 10px 2px 0;text-underline-offset:3px}
+.id-fold{border-bottom:1px solid var(--line)}
+.id-fold>summary{font-size:16px;font-weight:600;padding:19px 2px;cursor:pointer}
+.id-fold-body{padding:2px 4px 20px;font-size:14px;line-height:1.7}
+.id-context-item{padding:16px 0;border-top:1px solid var(--line)}
+.id-context-item:first-child{border-top:0;padding-top:0}
+.id-context-item h4{font-size:15px;margin:0 0 6px}
+.id-context-item p{margin:8px 0}
+.id-context-item .id-label{margin:0;font-size:12px}
+.id-context-item>a{font-size:13px;color:var(--green)}
+.id-questions-list{padding-left:22px;margin:0;max-width:1000px}
+.id-questions-list li{padding:8px 0 8px 6px}
+.id-questions-list p{margin:5px 0}
+.id-results{margin-top:36px;scroll-margin-top:24px}
+.id-results-title{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.id-results-title h3{font-size:27px;margin:0 0 8px}
+.id-summary-stats{font-size:12px;color:#657168;margin:0}
+.id-scope{font-size:13px;line-height:1.7;max-width:900px;margin:8px 0 19px;color:#58655e}
+.id-controls{background:#f0f2eb;padding:18px;border:1px solid var(--line);border-radius:6px;margin:20px 0}
+.id-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.id-filter{font:inherit;font-size:12px;color:var(--green);background:#fffef9;border:1px solid #c8d0c6;padding:8px 13px;border-radius:30px;cursor:pointer}
+.id-filter[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.id-search-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.id-search-wrap{flex:1;min-width:180px;max-width:450px}
+.id-search-wrap label{display:block;font-size:11px;margin-bottom:6px;font-weight:600;color:#526257}
+#id-search{width:100%;font:inherit;font-size:14px;padding:10px 12px;background:#fffef9;border:1px solid #c8d0c6;border-radius:4px}
+.id-result-count{font-size:12px;color:#58655e;margin-right:auto}
+.id-result-group{margin:10px 0;border:1px solid var(--line);border-radius:6px;background:#fffef9;overflow:hidden}
+.id-result-group>summary{display:flex;gap:12px;align-items:center;padding:18px 20px;font-weight:600;font-size:15px;cursor:pointer;list-style:none}
+.id-result-group>summary::-webkit-details-marker{display:none}
+.id-result-group>summary::before{content:"+";font-size:20px;line-height:1;color:var(--green);font-weight:400;flex-shrink:0}
+.id-result-group[open]>summary::before{content:"−"}
+.id-group-count{margin-left:auto;font-size:12px;color:#657168;white-space:nowrap;font-weight:400}
+.id-group-description{font-size:13px;line-height:1.7;margin:0;padding:0 20px 18px;max-width:1000px}
+.id-table-scroll{overflow-x:auto}
+.id-table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:left;font-size:12px;line-height:1.6}
+.id-table th,.id-table td{vertical-align:top;padding:14px 16px;border-top:1px solid var(--line);overflow-wrap:anywhere;white-space:normal}
+.id-table thead th{font-size:10px;letter-spacing:.03em;text-transform:uppercase;color:#657168;background:#f1f4ee}
+.id-table thead th:nth-child(1){width:23%}.id-table thead th:nth-child(2){width:22%}.id-table thead th:nth-child(3){width:17%}.id-table thead th:nth-child(4){width:38%}
+.id-table tbody th{font-weight:600}
+.id-table th a{color:var(--green);text-decoration-color:#b5c8b9;text-underline-offset:3px}
+.id-table td strong{font-weight:600;color:var(--ink)}
+.id-unit{margin-left:4px;color:#58655e}
+.id-specimen,.id-range,.id-source,.id-provenance{display:block;font-size:11px;color:#657168;font-weight:400;margin-top:4px}
+.id-provenance{font-size:10px}
+.id-notes{margin-top:28px}.id-notes li{margin:8px 0}.id-empty{padding:22px;color:#58655e}
+.id-review button:focus-visible,.id-review a:focus-visible,.id-review summary:focus-visible,.id-review input:focus-visible{outline:3px solid #729f86;outline-offset:3px}
+@media(max-width:900px){.id-highlights{grid-template-columns:1fr}.id-highlight+.id-highlight{border-left:0;border-top:1px solid #cbd7ca}.id-highlight{padding:17px 20px}.id-results-title{display:block}.id-summary-stats{margin:5px 0}.id-table{min-width:850px}}
+@media(max-width:760px){.site-header nav{flex-wrap:wrap;gap:12px}.id-review{padding-top:26px}.id-heading{display:block}.id-heading h2{font-size:33px}.id-actions{justify-content:flex-start;padding:0;margin-bottom:20px}.id-symptoms{grid-template-columns:1fr;gap:14px}.id-symptom{padding:20px}.id-controls{padding:14px}.id-filters{gap:6px}.id-filter{padding:8px 10px}.id-search-wrap{max-width:none;flex-basis:100%}.id-search-row{gap:10px}.id-result-group>summary{padding:16px;font-size:14px}.id-group-count{font-size:11px}.id-group-description{padding-left:16px;padding-right:16px}.id-review .id-table-scroll{margin:0}.id-intro{font-size:15px}}
+@media print{
+  body.print-id-review{background:#fff!important;color:#111;font-size:10pt}
+  body.print-id-review .site-header,body.print-id-review footer,body.print-id-review .skip,body.print-id-review #toast,body.print-id-review #main>*:not(#infectious-disease){display:none!important}
+  body.print-id-review #main{max-width:none;margin:0;padding:0}
+  body.print-id-review .id-review{padding:0;border:0}
+  body.print-id-review .id-actions,body.print-id-review .id-controls,body.print-id-review .id-text-button{display:none!important}
+  body.print-id-review .id-highlights,body.print-id-review .id-symptoms{display:block}
+  body.print-id-review .id-highlight,body.print-id-review .id-symptom{break-inside:avoid;padding:10px;margin:8px 0;background:#fff;border:1px solid #bbb}
+  body.print-id-review .id-highlight+.id-highlight{border-left:1px solid #bbb}
+  body.print-id-review .id-heading h2{font-size:25pt}
+  body.print-id-review .id-table-scroll{overflow:visible}
+  body.print-id-review .id-table{min-width:0;font-size:8pt;line-height:1.4}
+  body.print-id-review .id-table th,body.print-id-review .id-table td{padding:7px 6px}
+  body.print-id-review .id-table tr{break-inside:avoid}
+  body.print-id-review .id-table thead{display:table-header-group}
+  body.print-id-review .id-result-group{overflow:visible;border:0}
+  body.print-id-review summary{break-after:avoid}
+  body.print-id-review .id-result-group>summary::before{display:none}
+  body.print-id-review .id-references{font-size:8pt}
+  body.print-id-review .id-context-item{break-inside:avoid}
+  body.print-id-review a{color:#111;text-decoration:none}
+}

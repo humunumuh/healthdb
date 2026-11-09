@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-10-08",
+  "exportedAt": "2026-11-10",
   "firstDate": "2014-09-18",
-  "lastDate": "2026-09-29",
-  "resultCount": 1254,
-  "markerCount": 275,
-  "collectionCount": 49,
+  "lastDate": "2026-10-20",
+  "resultCount": 1290,
+  "markerCount": 297,
+  "collectionCount": 52,
   "markers": [
     {
       "key": "acth",
@@ -1000,7 +1000,7 @@
       "results": [
         {
           "date": "2026-05-07",
-          "value": 1.0,
+          "value": "< 1",
           "low": null,
           "high": 10.0,
           "source": "Laboratory C"
@@ -1030,7 +1030,7 @@
       "results": [
         {
           "date": "2026-05-07",
-          "value": 1.0,
+          "value": "< 1",
           "low": null,
           "high": 10.0,
           "source": "Laboratory C"
@@ -1506,6 +1506,13 @@
           "low": 100.0,
           "high": 600.0,
           "source": "Laboratory I"
+        },
+        {
+          "date": "2026-09-28",
+          "value": 462.0,
+          "low": 100.0,
+          "high": 600.0,
+          "source": "Laboratory A"
         }
       ]
     },
@@ -2146,6 +2153,36 @@
       ]
     },
     {
+      "key": "chikungunya-igg",
+      "name": "Chikungunya IgG",
+      "unit": "",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "<10",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "chikungunya-igm",
+      "name": "Chikungunya IgM",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Not Detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
       "key": "chlamydia-trachomatis",
       "name": "Chlamydia Trachomatis",
       "unit": "PCR",
@@ -2179,6 +2216,20 @@
           "low": null,
           "high": null,
           "source": "Laboratory B"
+        },
+        {
+          "date": "2026-10-10",
+          "value": "Not detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        },
+        {
+          "date": "2026-10-20",
+          "value": "Not Detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -2905,6 +2956,13 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-20",
+          "value": 7.0,
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -3624,6 +3682,21 @@
           "low": null,
           "high": 0.35,
           "source": "Laboratory A"
+        }
+      ]
+    },
+    {
+      "key": "gastrin",
+      "name": "Gastrin",
+      "unit": "pmol/L",
+      "category": "Endocrine tests",
+      "results": [
+        {
+          "date": "2026-05-07",
+          "value": 6.0,
+          "low": null,
+          "high": 55.0,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -4496,6 +4569,13 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-20",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -4511,6 +4591,13 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-20",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -4586,6 +4673,81 @@
       ]
     },
     {
+      "key": "helicobacter-pylori-urea-breath-test",
+      "name": "Helicobacter pylori Urea Breath Test",
+      "unit": "",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-05-07",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
+        }
+      ]
+    },
+    {
+      "key": "hepatitis-a-total-antibody",
+      "name": "Hepatitis A Total Antibody",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "DETECTED",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "hepatitis-b-core-total-antibody",
+      "name": "Hepatitis B Core Total Antibody",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "hepatitis-b-surface-antibody",
+      "name": "Hepatitis B Surface Antibody",
+      "unit": "mIU/mL",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": 830.0,
+          "low": null,
+          "high": 10.0,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "hepatitis-c-antibody",
+      "name": "Hepatitis C Antibody",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
       "key": "hiv-ag-ab",
       "name": "HIV Ag/Ab",
       "unit": "Qualitative",
@@ -4597,6 +4759,13 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-10",
+          "value": "NonReact",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
         }
       ]
     },
@@ -5489,6 +5658,21 @@
       ]
     },
     {
+      "key": "lyme-igg",
+      "name": "Lyme IgG",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Not Detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
       "key": "lymphocytes",
       "name": "Lymphocytes",
       "unit": "x10^9/L",
@@ -6180,6 +6364,21 @@
       ]
     },
     {
+      "key": "mycoplasma-genitalium-dna",
+      "name": "Mycoplasma genitalium DNA",
+      "unit": "Qualitative",
+      "category": "Sexual health tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Not detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
       "key": "neisseria-gonorrhoeae",
       "name": "Neisseria Gonorrhoeae",
       "unit": "PCR",
@@ -6213,6 +6412,20 @@
           "low": null,
           "high": null,
           "source": "Laboratory B"
+        },
+        {
+          "date": "2026-10-10",
+          "value": "Not detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        },
+        {
+          "date": "2026-10-20",
+          "value": "Not Detected",
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -6456,6 +6669,13 @@
           "low": 15.0,
           "high": 80.0,
           "source": "Laboratory I"
+        },
+        {
+          "date": "2026-09-28",
+          "value": 43.0,
+          "low": 15.0,
+          "high": 80.0,
+          "source": "Laboratory A"
         }
       ]
     },
@@ -6959,6 +7179,96 @@
           "low": 1.5,
           "high": 7.6,
           "source": "Laboratory A"
+        }
+      ]
+    },
+    {
+      "key": "q-fever-phase-ii-igg-eia",
+      "name": "Q Fever Phase II IgG (EIA)",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "q-fever-phase-ii-igm-eia",
+      "name": "Q Fever Phase II IgM (EIA)",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "quantiferon-mitogen-control",
+      "name": "QuantiFERON Mitogen Control",
+      "unit": "IU/mL",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": ">9.96",
+          "low": 0.5,
+          "high": null,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "quantiferon-tb-antigens-cd4",
+      "name": "QuantiFERON TB Antigens (CD4)",
+      "unit": "IU/mL",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "<0.01",
+          "low": null,
+          "high": 0.35,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "quantiferon-tb-antigens-cd4-cd8",
+      "name": "QuantiFERON TB Antigens (CD4, CD8)",
+      "unit": "IU/mL",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "<0.01",
+          "low": null,
+          "high": 0.35,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
+      "key": "quantiferon-tb-gold-plus",
+      "name": "QuantiFERON-TB Gold Plus",
+      "unit": "Qualitative",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": "Negative",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
         }
       ]
     },
@@ -8059,6 +8369,21 @@
       ]
     },
     {
+      "key": "strongyloides-igg",
+      "name": "Strongyloides IgG",
+      "unit": "ratio",
+      "category": "Infection tests",
+      "results": [
+        {
+          "date": "2026-10-10",
+          "value": 0.13,
+          "low": null,
+          "high": 0.8,
+          "source": "Laboratory B"
+        }
+      ]
+    },
+    {
       "key": "syphilis-screen",
       "name": "Syphilis Screen",
       "unit": "Qualitative",
@@ -8070,6 +8395,13 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-10",
+          "value": "NonReact",
+          "low": null,
+          "high": null,
+          "source": "Laboratory B"
         }
       ]
     },
@@ -9685,6 +10017,28 @@
           "low": null,
           "high": null,
           "source": "Laboratory A"
+        },
+        {
+          "date": "2026-10-20",
+          "value": 2.5,
+          "low": null,
+          "high": null,
+          "source": "Laboratory C"
+        }
+      ]
+    },
+    {
+      "key": "urine-calcium-excretion-24h",
+      "name": "Urine Calcium Excretion (24h)",
+      "unit": "mmol/d",
+      "category": "Kidney and urinary tests",
+      "results": [
+        {
+          "date": "2026-10-20",
+          "value": 4.7,
+          "low": 2.5,
+          "high": 7.5,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -9748,6 +10102,21 @@
       ]
     },
     {
+      "key": "urine-copper-excretion-24h",
+      "name": "Urine Copper Excretion (24h)",
+      "unit": "umol/d",
+      "category": "Kidney and urinary tests",
+      "results": [
+        {
+          "date": "2026-10-20",
+          "value": 0.24,
+          "low": null,
+          "high": 1.6,
+          "source": "Laboratory C"
+        }
+      ]
+    },
+    {
       "key": "urine-creatinine-excretion-24h",
       "name": "Urine Creatinine Excretion (24h)",
       "unit": "mmol/d",
@@ -9756,6 +10125,13 @@
         {
           "date": "2026-04-30",
           "value": 12.6,
+          "low": 7.0,
+          "high": 17.0,
+          "source": "Laboratory C"
+        },
+        {
+          "date": "2026-10-20",
+          "value": 13.2,
           "low": 7.0,
           "high": 17.0,
           "source": "Laboratory C"
@@ -9854,6 +10230,21 @@
           "low": 44.0,
           "high": 53.0,
           "source": "Laboratory A"
+        }
+      ]
+    },
+    {
+      "key": "urine-free-cortisol-24h",
+      "name": "Urine Free Cortisol (24h)",
+      "unit": "nmol/d",
+      "category": "Endocrine tests",
+      "results": [
+        {
+          "date": "2026-10-20",
+          "value": 73.0,
+          "low": null,
+          "high": 130.0,
+          "source": "Laboratory C"
         }
       ]
     },
@@ -10299,6 +10690,21 @@
       ]
     },
     {
+      "key": "urine-phosphate-excretion-24h",
+      "name": "Urine Phosphate Excretion (24h)",
+      "unit": "mmol/d",
+      "category": "Kidney and urinary tests",
+      "results": [
+        {
+          "date": "2026-10-20",
+          "value": 34.0,
+          "low": 16.0,
+          "high": 48.0,
+          "source": "Laboratory C"
+        }
+      ]
+    },
+    {
       "key": "urine-phosphoethanolamine",
       "name": "Urine Phosphoethanolamine",
       "unit": "mmol/mol Cr",
@@ -10467,6 +10873,21 @@
       ]
     },
     {
+      "key": "urine-sodium-excretion-24h",
+      "name": "Urine Sodium Excretion (24h)",
+      "unit": "mmol/d",
+      "category": "Kidney and urinary tests",
+      "results": [
+        {
+          "date": "2026-10-20",
+          "value": 152.0,
+          "low": 40.0,
+          "high": 240.0,
+          "source": "Laboratory C"
+        }
+      ]
+    },
+    {
       "key": "urine-specific-gravity",
       "name": "Urine Specific Gravity",
       "unit": "U.G.",
@@ -10600,6 +11021,13 @@
         {
           "date": "2026-04-30",
           "value": 1.72,
+          "low": 0.5,
+          "high": 2.0,
+          "source": "Laboratory C"
+        },
+        {
+          "date": "2026-10-20",
+          "value": 1.88,
           "low": 0.5,
           "high": 2.0,
           "source": "Laboratory C"

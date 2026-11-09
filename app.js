@@ -1,7 +1,7 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const assetUrl = (path) => `${path}?v=20261008-6`;
+const assetUrl = (path) => `${path}?v=20261110-1`;
 const dateFormat = new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const numberFormat = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 20 });
 const state = { markers: [], selected: null, showAll: false, toastTimer: null };
@@ -294,8 +294,9 @@ async function load() {
     $("share-test").addEventListener("click", () => copyLink("labs", state.selected.key));
     $("share-reports").addEventListener("click", () => copyLink("reports"));
     $("share-scans").addEventListener("click", () => copyLink("scans", null, $("scan-viewer").healthDBScanViewer?.getSelection?.()));
+    await loadInfectiousDisease(labs);
     const sectionId = window.location.hash.slice(1);
-    if (["labs", "scans", "reports", "overview"].includes(sectionId)) {
+    if (["infectious-disease", "labs", "scans", "reports", "overview"].includes(sectionId)) {
       $(sectionId).scrollIntoView({ behavior: "instant", block: "start" });
     }
   } catch (error) {

@@ -9,19 +9,39 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
   <title>HealthDB</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261008-6">
+  <link rel="stylesheet" href="styles.css?v=20261110-1">
+  <link rel="stylesheet" href="infectious-disease.css?v=20261110-1">
   <link rel="stylesheet" href="scans.css?v=20261008-6">
   <script src="viewer.js?v=20261008-6" defer></script>
-  <script src="app.js?v=20261008-6" defer></script>
+  <script src="infectious-disease.js?v=20261110-1" defer></script>
+  <script src="app.js?v=20261110-1" defer></script>
   <script src="scans.js?v=20261008-6" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#labs">HealthDB</a>
-    <nav aria-label="Main navigation"><a href="#labs">Labs</a><a href="#scans">Scans</a><a href="#reports">Reports</a><a href="#overview">History</a></nav>
+    <nav aria-label="Main navigation"><a href="#infectious-disease">ID appointment</a><a href="#labs">Labs</a><a href="#scans">Scans</a><a href="#reports">Reports</a><a href="#overview">History</a></nav>
   </header>
   <main id="main">
+    <section class="id-review" id="infectious-disease" aria-labelledby="id-heading">
+      <div class="id-heading"><div><p class="eyebrow">Appointment preparation</p><h2 id="id-heading">Infectious disease review</h2></div><div class="id-actions"><button class="quiet-button" id="share-id-review" type="button">Copy link</button><button class="quiet-button" id="print-id-review" type="button">Print appointment review</button></div></div>
+      <p id="id-loading" role="status">Loading appointment review…</p>
+      <div id="id-content" hidden>
+        <p id="id-intro" class="id-intro"></p><p id="id-review-date" class="id-review-date"></p>
+        <div id="id-highlights" class="id-highlights"></div>
+        <div id="id-symptoms" class="id-symptoms"></div>
+        <details id="id-context" class="id-fold"><summary>Imaging, infection timeline and treatment history</summary><div id="id-context-content" class="id-fold-body"></div></details>
+        <details id="id-questions" class="id-fold" open><summary>Questions to take to the specialist</summary><div class="id-fold-body"><ol id="id-questions-list" class="id-questions-list"></ol></div></details>
+        <div id="id-results" class="id-results">
+          <div class="id-results-title"><h3>Results for discussion</h3><p id="id-summary-stats" class="id-summary-stats"></p></div>
+          <p id="id-scope" class="id-scope"></p>
+          <div class="id-controls"><div id="id-filters" class="id-filters" role="group" aria-label="Filter results by symptom"></div><div class="id-search-row"><div class="id-search-wrap"><label for="id-search">Search the selected results</label><input id="id-search" type="search" placeholder="Organism, test, specimen or date…" autocomplete="off"></div><p id="id-result-count" class="id-result-count" aria-live="polite"></p><button id="id-expand" class="quiet-button" type="button">Expand groups</button><button id="id-clear" class="quiet-button" type="button">Reset</button></div></div>
+          <div id="id-result-groups"></div><p id="id-empty" class="id-empty" hidden>No matching results. Try a different search or reset the filters.</p>
+        </div>
+        <details id="id-notes" class="id-fold id-notes"><summary>Scope and source notes</summary><div class="id-fold-body"><ul id="id-notes-list"></ul></div></details>
+      </div>
+    </section>
     <section class="lab-section" id="labs" aria-labelledby="lab-heading">
       <div class="section-heading"><h1 id="lab-heading">Labs</h1><div class="data-stats" id="data-stats" aria-live="polite">Loading…</div></div>
       <div class="lab-workspace">
@@ -68,7 +88,7 @@
       <li>Patient hypotheses are unconfirmed.</li>
     </ul></details>
   </main>
-  <footer>Updated 8 Oct 2026</footer>
+  <footer>Updated 10 Nov 2026 · Lab results through 20 Oct 2026</footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

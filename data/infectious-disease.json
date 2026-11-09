@@ -1,0 +1,1526 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10",
+  "labSnapshot": "2026-11-10",
+  "intro": "Bring this review to the infectious disease appointment: symptoms, dated evidence and questions to work through together. It brings together infection testing and relevant findings from other specialties; it does not assign an infectious diagnosis.",
+  "scope": "Selected dated findings are shown below, with links to every selected test’s full recorded history. All 32 results from 10 and 20 October are included. Older results are historical evidence, not a current clearance of infection.",
+  "highlights": [
+    {
+      "title": "Recent infection screen",
+      "text": "September/October testing is largely negative. Hepatitis A total antibody and hepatitis B surface antibody have immunity-related interpretations, not a diagnosis of active hepatitis."
+    },
+    {
+      "title": "Possible past triggers",
+      "text": "Campylobacter PCR was positive in 2017; CMV IgG was detected in 2020. COVID episodes are supported by dated personal records in May 2022 and February 2024. Causation of ongoing symptoms is unestablished."
+    },
+    {
+      "title": "Keep the timelines separate",
+      "text": "Longstanding throat symptoms, nocturia and some musculoskeletal symptoms predate documented COVID episodes. Later worsening and any symptom-free intervals still need to be mapped."
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "pain",
+      "title": "Soft-tissue pain",
+      "label": "Patient-reported pattern",
+      "text": "Load- or stretch-triggered pain at multiple sites, delayed finger swelling/stiffness after typing, guarding and loss of knee/elbow extension. Shoulder symptoms by about 2017; ankle symptoms by 2021; further sites accumulated during 2022–2024. Exact dates vary between retrospective notes.",
+      "question": "Does the examination suggest enthesitis or reactive arthritis, muscle disease, a post-infectious process, or separate local injuries? Which episodes have a credible time link to an infection?",
+      "refs": [
+        "reactive"
+      ]
+    },
+    {
+      "id": "throat",
+      "title": "Throat phlegm",
+      "label": "Patient-reported since about 2017",
+      "text": "Persistent mucus and throat clearing; sometimes brown or green, aggravated by smoke/irritants and overnight dryness. Symptoms have persisted across homes and periods without smoking. ENT feedback in August 2026 is patient-reported; the original letter has not been reviewed.",
+      "question": "Is the mucus coming from the nose/throat or lower airways? Would examination and the cough pattern justify a fresh, appropriately collected sample or respiratory/ENT assessment?",
+      "refs": [
+        "cough"
+      ]
+    },
+    {
+      "id": "urine",
+      "title": "Nocturia",
+      "label": "Longstanding patient-reported symptom",
+      "text": "Repeated waking to void, sometimes at relatively small volumes; estimates of overnight volume vary and are not a formal diary. The September 2025 ultrasound recorded a normal urinary tract and 11 mL post-void residual. October urine chemistry does not include a bacterial culture.",
+      "question": "Is there evidence for urinary infection or prostatitis, or does a bladder diary and urinary/sleep assessment better explain the pattern? Review dysuria, pelvic pain, fever and exposure history.",
+      "refs": [
+        "nocturia"
+      ]
+    },
+    {
+      "id": "gut",
+      "title": "Gut and other symptoms",
+      "label": "Patient-reported; current status to confirm",
+      "text": "Methane-positive breath testing, constipation and gas; constipation improved after antibiotics and starting prucalopride. Notes also describe intermittent orthostatic symptoms, cold/purple extremities, flushing, itch and skin reactivity. These have no established infectious explanation.",
+      "question": "Which symptoms started or clearly worsened after an infection, and which need a separate gastrointestinal, autonomic, allergy or rheumatology assessment?",
+      "refs": [
+        "longcovid"
+      ]
+    }
+  ],
+  "context": [
+    {
+      "title": "Imaging and rheumatology",
+      "source": "Reviewed dashboard reports; left-knee report is a transcription",
+      "text": "Right-knee MRI (September 2025): severe insertional semimembranosus tendinopathy with adjacent oedema and a small ganglion. Left-knee MRI (September 2026): mild distal muscle oedema described as strain, with normal tendon insertions. Right hand/wrist MRI (May 2026): no synovitis or tenosynovitis. Rheumatology review (November 2025) recorded no active synovitis. These findings are relevant to symptom localization; they do not identify an infectious cause.",
+      "link": "#reports",
+      "linkText": "Open imaging reports"
+    },
+    {
+      "title": "Urinary tract ultrasound · 16 September 2025",
+      "source": "Original report checked for this review",
+      "text": "No renal or urinary tract abnormality identified. No hydronephrosis or renal calculi; bladder appeared normal. Pre-void volume 254 mL, post-void 11 mL (4%). Prostate volume 21 cc. Earlier notes mention a prostate calcification, which is not described in this report; no inference of prostatitis is made."
+    },
+    {
+      "title": "Sinus CT · 25 September 2020",
+      "source": "Original report checked for this review",
+      "text": "Clear paranasal sinuses, nasal passage and nasopharynx; no sinus disease demonstrated. Useful historical context, but not a current ENT assessment."
+    },
+    {
+      "title": "ENT assessment · 11 August 2026",
+      "source": "Patient report in personal notes; original letter pending",
+      "text": "Reported incomplete laryngeal/vocal-fold closure during speech, no visible reflux inflammation and a recommendation for voice therapy. Exact diagnosis and findings need confirmation from the ENT letter."
+    },
+    {
+      "title": "COVID and the symptom timeline",
+      "source": "Dated personal records; no laboratory SARS-CoV-2 result in HealthDB",
+      "text": "A May 2022 episode was contemporaneously described as COVID. February 2024 records include a positive rapid-antigen-test photo. A February 2023 illness was suspected but unconfirmed. Some pain and throat symptoms predate these episodes. A post-infectious assessment depends on the clinical timeline; no routine laboratory test definitively confirms or excludes Long COVID.",
+      "refs": [
+        "longcovid"
+      ]
+    },
+    {
+      "title": "Antibiotics and response · 2026",
+      "source": "Treatment history from personal notes; reconcile dates and doses at the appointment",
+      "text": "Rifaximin 550 mg three times daily plus metronidazole 400 mg three times daily, recorded 7–20 May. A second course in approximately mid-to-late July also included bismuth. Constipation improved, but prucalopride began after the first course, so attribution is uncertain. The June breath retest is described as methane 11 ppm baseline / 14 ppm peak in notes; its original report has not been checked or added to HealthDB. No established durable improvement in soft-tissue pain is documented; early nocturia changes were confounded by fluid intake. Review other antibiotics, especially any fluoroquinolone exposure, and steroid use.",
+      "refs": [
+        "antibiotics"
+      ]
+    },
+    {
+      "title": "Bone and nutritional context",
+      "source": "Existing dashboard findings and HealthDB",
+      "text": "April 2026 DXA: lumbar-spine Z-score −3.0, femoral-neck −2.6, total-hip −2.0. Low bone density, low/borderline ALP and copper/caeruloplasmin history deserve their own clinical interpretation; they do not establish an infection mechanism."
+    }
+  ],
+  "questions": [
+    {
+      "title": "What is the leading clinical pattern?",
+      "text": "Ask the specialist to distinguish active infection, a reaction after infection, and non-infectious causes. Compare the 2017 Campylobacter result and later illnesses with the onset of each painful site; a positive remote test alone is insufficient.",
+      "refs": [
+        "reactive"
+      ]
+    },
+    {
+      "title": "Which exposures change the interpretation?",
+      "text": "Bring travel and residence dates, tick/mosquito bites, livestock or animal-birth exposure, soil/freshwater exposure, TB contacts and relevant sexual exposure timing. Review vaccinations and antibiotics or steroids around each test. Missing exposure information is not the same as no exposure."
+    },
+    {
+      "title": "Which sample would answer the current symptom?",
+      "text": "For phlegm, clarify nasal drainage versus sputum and the presence of persistent cough, breathlessness or fever. For urinary symptoms, clarify dysuria, pelvic/perineal pain, discharge or fever. Ask whether targeted culture/PCR or another specialty assessment is warranted by the examination, rather than repeating the entire screen.",
+      "refs": [
+        "cough",
+        "nocturia"
+      ]
+    },
+    {
+      "title": "What needs documenting before follow-up?",
+      "text": "Bring a short symptom timeline, a three-day frequency/volume and fluid diary, medication courses and response, the ENT letter and original June breath-test report. Record whether there have been recurrent measured fevers, drenching night sweats, weight loss, swollen glands, rash or eye inflammation; these are not reliably documented as present or absent in the reviewed material.",
+      "refs": [
+        "nocturia"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "recent-infection",
+      "title": "Recent infection testing",
+      "description": "September and October 2026. Results apply to the organism, method, specimen and date tested. Exposure timing and the clinical picture determine whether anything further is needed.",
+      "rows": [
+        {
+          "key": "ross-river-virus-igg-eia",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Arbovirus results to review against any febrile illness, mosquito exposure and timing of joint symptoms.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ross-river-virus-igm-eia",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Arbovirus results to review against any febrile illness, mosquito exposure and timing of joint symptoms.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "chikungunya-igg",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Reported as <10; the report does not print a unit or reference interval. Review alongside IgM and exposure timing.",
+          "reference": "Not printed in report",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "chikungunya-igm",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Review alongside IgG, travel, mosquito exposure and onset of fever or joint symptoms.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "lyme-igg",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "IgG assay result. Its relevance depends on travel, tick exposure, timing and the testing algorithm; it is not a universal exclusion of Lyme disease.",
+          "citations": [
+            "lyme"
+          ],
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "q-fever-phase-ii-igg-eia",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Phase II antibodies only. Bring livestock, animal-birth-product, occupational and travel exposure history; this is not a complete assessment for every Q fever presentation.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "q-fever-phase-ii-igm-eia",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Phase II antibodies only. Bring livestock, animal-birth-product, occupational and travel exposure history; this is not a complete assessment for every Q fever presentation.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "quantiferon-tb-gold-plus",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Overall TB blood-test result. A negative result does not by itself exclude active TB or very recent infection when symptoms or exposure warrant assessment.",
+          "citations": [
+            "tb"
+          ],
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "quantiferon-tb-antigens-cd4",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Antigen response supporting the reported overall QuantiFERON result.",
+          "reference": "<0.35 IU/mL",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "quantiferon-tb-antigens-cd4-cd8",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Antigen response supporting the reported overall QuantiFERON result.",
+          "reference": "<0.35 IU/mL",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "quantiferon-mitogen-control",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Positive-control response; this high control value is not evidence of TB infection.",
+          "reference": ">0.5 IU/mL",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "strongyloides-igg",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Laboratory interpretation: negative. Consider relevant residence, travel and soil exposure, especially before immunosuppressive treatment.",
+          "reference": "Negative <0.8; borderline 0.8–1.09; positive >1.09",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "chlamydia-trachomatis-dna",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "pain"
+          ],
+          "note": "Site-specific PCR; a throat result does not describe the urinary tract.",
+          "specimen": "Throat swab",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "neisseria-gonorrhoeae-dna",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "throat",
+            "pain"
+          ],
+          "note": "Site-specific PCR; a throat result does not describe the urinary tract.",
+          "specimen": "Throat swab",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "chlamydia-trachomatis-dna",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine",
+            "pain"
+          ],
+          "note": "Site-specific PCR; current negative testing does not establish whether a remote infection triggered symptoms.",
+          "specimen": "Urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "neisseria-gonorrhoeae-dna",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine",
+            "pain"
+          ],
+          "note": "Site-specific PCR; current negative testing does not establish whether a remote infection triggered symptoms.",
+          "specimen": "Urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "mycoplasma-genitalium-dna",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "Mycoplasma genitalium test of the urinary tract; this is not a Mycoplasma pneumoniae respiratory test.",
+          "specimen": "First-void urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hiv-ag-ab",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Reported NonReact (non-reactive). Interpret against the date of any relevant exposure.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "syphilis-screen",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Reported NonReact (non-reactive). Interpret against the date of any relevant exposure.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hepatitis-a-total-antibody",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "The report describes past infection or vaccination and immunity. Total antibody alone is not evidence of acute hepatitis A.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hepatitis-b-surface-antibody",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "other"
+          ],
+          "note": "The report describes immunity. A value above the printed threshold is not evidence of active hepatitis B; review with core antibody and surface antigen.",
+          "reference": "Report threshold <10 mIU/mL; immune response interpretation",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hepatitis-b-core-total-antibody",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "other"
+          ],
+          "note": "Read with hepatitis B surface antibody and vaccination/exposure history.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hbsag",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "other"
+          ],
+          "note": "Read with hepatitis B surface antibody and vaccination/exposure history.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hepatitis-c-antibody",
+          "date": "2026-10-10",
+          "source": "Laboratory B",
+          "tags": [
+            "other"
+          ],
+          "note": "Negative antibody testing on both October dates; method/name retained as reported. Timing after exposure still matters.",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "hcv-igg",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "other"
+          ],
+          "note": "Negative antibody testing on both October dates; method/name retained as reported. Timing after exposure still matters.",
+          "provenance": "Original October report checked"
+        }
+      ]
+    },
+    {
+      "id": "historical-infection",
+      "title": "Earlier microbiology and infection history",
+      "description": "Historical results are included for the timeline, not presented as a current infection screen. Duplicate CMV IgG and throat-culture labels are shown once here; all database rows remain in Labs.",
+      "rows": [
+        {
+          "key": "campylobacter-pcr",
+          "date": "2017-10-04",
+          "source": "Laboratory E",
+          "tags": [
+            "gut",
+            "pain"
+          ],
+          "note": "Positive stool PCR in 2017. A possible historical trigger to compare with symptom onset; this does not demonstrate ongoing infection.",
+          "specimen": "Stool",
+          "citations": [
+            "reactive"
+          ],
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "faecal-culture",
+          "date": "2017-10-06",
+          "source": "Laboratory E",
+          "tags": [
+            "gut",
+            "pain"
+          ],
+          "note": "Culture two days after the positive PCR. Different method and date; both findings are retained.",
+          "specimen": "Stool",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sputum-culture",
+          "date": "2017-10-06",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "2017 sputum findings. Upper-airway flora and Gram-stain shapes do not identify a specific causative pathogen or establish a current lower-airway infection.",
+          "specimen": "Sputum",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sputum-microscopy",
+          "date": "2017-10-06",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "2017 sputum findings. Upper-airway flora and Gram-stain shapes do not identify a specific causative pathogen or establish a current lower-airway infection.",
+          "specimen": "Sputum",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "throat-culture",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "2020 culture reported oral flora and no Candida. This old result does not establish the cause of current phlegm.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "microscopy-polymorphs",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Microscopy accompanying the 2020 throat culture; interpret with the culture, not as a named pathogen.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "microscopy-gram-neg-bacilli",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Microscopy accompanying the 2020 throat culture; interpret with the culture, not as a named pathogen.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "microscopy-gram-pos-bacilli",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Microscopy accompanying the 2020 throat culture; interpret with the culture, not as a named pathogen.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "microscopy-gram-pos-cocci",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Microscopy accompanying the 2020 throat culture; interpret with the culture, not as a named pathogen.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "hsv-1-dna-pcr",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Historical 2020 PCR result; no inference about a new episode.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "hsv-2-dna-pcr",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Historical 2020 PCR result; no inference about a new episode.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "vzv-dna-pcr",
+          "date": "2020-08-24",
+          "source": "Laboratory E",
+          "tags": [
+            "throat"
+          ],
+          "note": "Historical 2020 PCR result; no inference about a new episode.",
+          "specimen": "Throat swab",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "cmv-igg",
+          "date": "2020-08-26",
+          "source": "Laboratory E",
+          "tags": [
+            "other",
+            "pain"
+          ],
+          "note": "CMV IgG detected in 2020 indicates past exposure, not the date of infection or active CMV disease. IgM was not detected.",
+          "citations": [
+            "cmv"
+          ],
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "cmv-igm",
+          "date": "2020-08-26",
+          "source": "Laboratory E",
+          "tags": [
+            "other",
+            "pain"
+          ],
+          "note": "Historical CMV IgM result, paired with the IgG entry above.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ebv-vca-igg",
+          "date": "2020-08-26",
+          "source": "Laboratory E",
+          "tags": [
+            "other",
+            "throat"
+          ],
+          "note": "2020 EBV panel. Does not establish EBV status in 2026.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ebv-vca-igm",
+          "date": "2020-08-26",
+          "source": "Laboratory E",
+          "tags": [
+            "other",
+            "throat"
+          ],
+          "note": "2020 EBV panel. Does not establish EBV status in 2026.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ebv-ebna-igg",
+          "date": "2020-08-26",
+          "source": "Laboratory E",
+          "tags": [
+            "other",
+            "throat"
+          ],
+          "note": "2020 EBV panel. Does not establish EBV status in 2026.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "chlamydia-trachomatis",
+          "date": "2022-05-19",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "pain"
+          ],
+          "note": "Earlier 2022 testing retained under the original database marker name; October site-specific tests appear above.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "neisseria-gonorrhoeae",
+          "date": "2022-05-19",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "pain"
+          ],
+          "note": "Earlier 2022 testing retained under the original database marker name; October site-specific tests appear above.",
+          "provenance": "HealthDB recorded result"
+        }
+      ]
+    },
+    {
+      "id": "inflammation",
+      "title": "Inflammation, blood count and soft-tissue context",
+      "description": "Latest recorded results, each with its own date. These help frame the examination and differential; normal markers do not by themselves exclude localized infection, inflammatory disease or a post-infectious condition.",
+      "rows": [
+        {
+          "key": "c-reactive-protein",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Systemic inflammation context. Review the full trend and whether the sample coincided with a flare.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "esr",
+          "date": "2025-11-07",
+          "source": "Laboratory not specified",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Systemic inflammation context. Review the full trend and whether the sample coincided with a flare.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "creatine-kinase",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain"
+          ],
+          "note": "Muscle-enzyme context; the latest value is at the recorded upper bound, not above it.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "wcc",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "neutrophils",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "lymphocytes",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "monocytes",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "eosinophils",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "basophils",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "haemoglobin",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "platelets",
+          "date": "2026-03-30",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "throat",
+            "urine",
+            "other"
+          ],
+          "note": "Latest blood-count component. The March 2026 sample predates the October infection screen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "hla-b27",
+          "date": "2025-11-07",
+          "source": "Laboratory not specified",
+          "tags": [
+            "pain"
+          ],
+          "note": "Clinical HLA-B27 test from November 2025. A negative result does not exclude reactive arthritis; interpret with the clinical pattern.",
+          "citations": [
+            "reactive-testing"
+          ],
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ana-screen",
+          "date": "2025-11-07",
+          "source": "Laboratory not specified",
+          "tags": [
+            "pain"
+          ],
+          "note": "Rheumatology context; these are not infection tests and do not exclude every inflammatory condition.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "rheumatoid-factor",
+          "date": "2025-11-07",
+          "source": "Laboratory not specified",
+          "tags": [
+            "pain"
+          ],
+          "note": "Rheumatology context; these are not infection tests and do not exclude every inflammatory condition.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "anti-ccp",
+          "date": "2025-11-07",
+          "source": "Laboratory not specified",
+          "tags": [
+            "pain"
+          ],
+          "note": "Rheumatology context; these are not infection tests and do not exclude every inflammatory condition.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "copper",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Recorded copper/caeruloplasmin context for broader assessment. These values do not establish an infectious cause or a tissue mechanism.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "caeruloplasmin",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain",
+            "other"
+          ],
+          "note": "Recorded copper/caeruloplasmin context for broader assessment. These values do not establish an infectious cause or a tissue mechanism.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "alp",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain"
+          ],
+          "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "vitamin-d-25-oh",
+          "date": "2026-06-19",
+          "source": "Laboratory A",
+          "tags": [
+            "pain"
+          ],
+          "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "beta-ctx",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain"
+          ],
+          "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "p1np",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "pain"
+          ],
+          "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
+          "provenance": "HealthDB recorded result"
+        }
+      ]
+    },
+    {
+      "id": "urinary",
+      "title": "Nocturia, urine studies and metabolic context",
+      "description": "The October collection ran 19–20 October. A 24-hour total cannot determine overnight urine production or the cause of awakenings. Urine chemistry is not a urine culture; the older microscopy is clearly dated.",
+      "rows": [
+        {
+          "key": "urine-volume-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Total 24-hour volume. Bring a contemporaneous frequency/volume diary to distinguish urine timing, bladder capacity and waking for other reasons.",
+          "specimen": "24-hour urine",
+          "citations": [
+            "nocturia"
+          ],
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "creatinine-urine",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Concentration and daily excretion are distinct measures from the same timed collection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-creatinine-excretion-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Concentration and daily excretion are distinct measures from the same timed collection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-sodium-excretion-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Timed urine chemistry; not a test for urinary infection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-calcium",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Timed urine chemistry; not a test for urinary infection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-calcium-excretion-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Timed urine chemistry; not a test for urinary infection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-phosphate-excretion-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Timed urine chemistry; not a test for urinary infection.",
+          "specimen": "24-hour urine",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-copper-excretion-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine",
+            "pain",
+            "other"
+          ],
+          "note": "Copper excretion from the same collection; the copper report rounds collection volume to 1.9 L.",
+          "specimen": "24-hour urine",
+          "reference": "<1.60 umol/d",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-free-cortisol-24h",
+          "date": "2026-10-20",
+          "source": "Laboratory C",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Free cortisol by LC-MS/MS; part of the broader endocrine assessment, not an infection screen.",
+          "specimen": "24-hour urine",
+          "reference": "<130 nmol/d",
+          "provenance": "Original October report checked"
+        },
+        {
+          "key": "urine-white-cells",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-red-cells",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-epithelial-cells",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-protein",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-glucose",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-ketones",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-blood",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-ph",
+          "date": "2023-06-14",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "June 2023 urinalysis/microscopy. Does not exclude a urinary infection now.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-cytology",
+          "date": "2023-06-21",
+          "source": "Laboratory B",
+          "tags": [
+            "urine"
+          ],
+          "note": "Cytology is a cell assessment, not a bacterial culture. A similar result was recorded one week earlier.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-osmolality",
+          "date": "2026-01-19",
+          "source": "Laboratory A",
+          "tags": [
+            "urine"
+          ],
+          "note": "January spot urine concentration. The unit is reproduced from HealthDB; this is not a contemporaneous overnight volume measurement.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-specific-gravity",
+          "date": "2022-05-19",
+          "source": "Laboratory A",
+          "tags": [
+            "urine"
+          ],
+          "note": "An isolated dilute urine sample in 2022. Consider alongside the later osmolality rather than diagnosing a persistent concentrating disorder.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-calcium-creatinine-ratio",
+          "date": "2026-01-19",
+          "source": "Laboratory A",
+          "tags": [
+            "urine"
+          ],
+          "note": "Earlier calcium/creatinine ratio and 24-hour oxalate for the non-infectious urinary differential.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "urine-oxalate-24h",
+          "date": "2026-04-30",
+          "source": "Laboratory C",
+          "tags": [
+            "urine"
+          ],
+          "note": "Earlier calcium/creatinine ratio and 24-hour oxalate for the non-infectious urinary differential.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "creatinine",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "egfr",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sodium",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "corrected-calcium",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "glucose-fasting",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "hba1c",
+          "date": "2026-04-30",
+          "source": "Laboratory A",
+          "tags": [
+            "urine",
+            "other"
+          ],
+          "note": "Kidney function, electrolytes and glycaemia provide context for urinary symptoms; they do not test for a urinary pathogen.",
+          "provenance": "HealthDB recorded result"
+        }
+      ]
+    },
+    {
+      "id": "airway-allergy",
+      "title": "Throat and skin: allergy context",
+      "description": "Allergy testing is included to support the broader discussion of phlegm, flushing and itch. The tested mixes are a limited screen; these results neither diagnose an infection nor exclude every allergic or laryngeal cause.",
+      "rows": [
+        {
+          "key": "total-ige",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Total IgE context alongside specific allergen tests.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-grass-pollen-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-animal-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-weed-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-nut-mix-1",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-mould-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-house-insect-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-food-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ige-seafood-mix",
+          "date": "2026-09-29",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Reported below the detection threshold for this mix; limited to the allergens tested.",
+          "reference": "<0.35: negative, as reported",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "tryptase",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "throat",
+            "other"
+          ],
+          "note": "Baseline tryptase in the setting of reported flushing, itch and skin reactivity. It does not by itself diagnose or exclude a mast-cell disorder.",
+          "provenance": "HealthDB recorded result"
+        }
+      ]
+    },
+    {
+      "id": "gut-systemic",
+      "title": "Gut and broader systemic context",
+      "description": "Breath-test findings and treatment response may help the history, but do not establish the cause of soft-tissue pain or nocturia. Breath-test collection was 27 April; HealthDB uses the 30 April processing/report date.",
+      "rows": [
+        {
+          "key": "sibo-lactulose-breath-methane-baseline",
+          "date": "2026-04-30",
+          "source": "Breath-test laboratory",
+          "tags": [
+            "gut",
+            "pain",
+            "urine"
+          ],
+          "note": "Recorded methane-positive breath test (intestinal methanogen overgrowth). No inference of invasive infection or causation of distant symptoms.",
+          "reference": "Methane-positive report interpretation",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sibo-lactulose-breath-methane-peak",
+          "date": "2026-04-30",
+          "source": "Breath-test laboratory",
+          "tags": [
+            "gut",
+            "pain",
+            "urine"
+          ],
+          "note": "Recorded methane-positive breath test (intestinal methanogen overgrowth). No inference of invasive infection or causation of distant symptoms.",
+          "reference": "Methane-positive report interpretation",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sibo-lactulose-breath-hydrogen-baseline",
+          "date": "2026-04-30",
+          "source": "Breath-test laboratory",
+          "tags": [
+            "gut"
+          ],
+          "note": "Report interpretation: hydrogen-negative. An absolute peak of 16 ppm is not a timed rise criterion; the generic database range is not used here.",
+          "reference": "Hydrogen-negative report interpretation",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "sibo-lactulose-breath-hydrogen-peak",
+          "date": "2026-04-30",
+          "source": "Breath-test laboratory",
+          "tags": [
+            "gut"
+          ],
+          "note": "Report interpretation: hydrogen-negative. An absolute peak of 16 ppm is not a timed rise criterion; the generic database range is not used here.",
+          "reference": "Hydrogen-negative report interpretation",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "helicobacter-pylori-urea-breath-test",
+          "date": "2026-05-07",
+          "source": "Laboratory C",
+          "tags": [
+            "gut"
+          ],
+          "note": "Negative urea breath test for H. pylori; separate from the lactulose test. HealthDB uses 7 May following the patient’s explicit correction of the printed collection date (11 May).",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "alt",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Liver/protein/LDH context for systemic assessment; nonspecific findings, not proof for or against a particular infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ast",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Liver/protein/LDH context for systemic assessment; nonspecific findings, not proof for or against a particular infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "bilirubin-total",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Liver/protein/LDH context for systemic assessment; nonspecific findings, not proof for or against a particular infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "albumin",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Liver/protein/LDH context for systemic assessment; nonspecific findings, not proof for or against a particular infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "lactate-dehydrogenase",
+          "date": "2026-09-28",
+          "source": "Laboratory A",
+          "tags": [
+            "gut",
+            "other"
+          ],
+          "note": "Liver/protein/LDH context for systemic assessment; nonspecific findings, not proof for or against a particular infection.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "ferritin",
+          "date": "2026-04-30",
+          "source": "Laboratory A",
+          "tags": [
+            "other"
+          ],
+          "note": "Iron stores and thyroid context when reviewing fatigue or other nonspecific symptoms.",
+          "provenance": "HealthDB recorded result"
+        },
+        {
+          "key": "tsh",
+          "date": "2026-04-30",
+          "source": "Laboratory A",
+          "tags": [
+            "other"
+          ],
+          "note": "Iron stores and thyroid context when reviewing fatigue or other nonspecific symptoms.",
+          "provenance": "HealthDB recorded result"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "reactive": {
+      "label": "NIAMS · Reactive arthritis",
+      "url": "https://www.niams.nih.gov/health-topics/reactive-arthritis"
+    },
+    "reactive-testing": {
+      "label": "NIAMS · Reactive arthritis testing",
+      "url": "https://www.niams.nih.gov/health-topics/reactive-arthritis/diagnosis-treatment-and-steps-to-take"
+    },
+    "antibiotics": {
+      "label": "TGA · Fluoroquinolone effects",
+      "url": "https://www.tga.gov.au/news/safety-updates/more-prominent-warnings-about-serious-side-effects-fluoroquinolone-antibiotics"
+    },
+    "tb": {
+      "label": "CDC · TB blood-test interpretation",
+      "url": "https://www.cdc.gov/tb/hcp/testing-diagnosis/interferon-gamma-release-assay.html"
+    },
+    "lyme": {
+      "label": "CDC · Lyme testing",
+      "url": "https://www.cdc.gov/lyme/hcp/diagnosis-testing/index.html"
+    },
+    "cmv": {
+      "label": "CDC · CMV antibody interpretation",
+      "url": "https://www.cdc.gov/cytomegalovirus/php/laboratories/index.html"
+    },
+    "cough": {
+      "label": "British Thoracic Society · Chronic cough",
+      "url": "https://thorax.bmj.com/content/78/Suppl_6/s3"
+    },
+    "nocturia": {
+      "label": "Canadian Urological Association · Nocturia assessment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9328849/"
+    },
+    "longcovid": {
+      "label": "CDC · Long COVID clinical guidance",
+      "url": "https://www.cdc.gov/long-covid/hcp/clinical-guidance/index.html"
+    }
+  },
+  "notes": [
+    "This is a curated appointment review of the available records, not an exhaustive list of every possible infectious cause or a recommendation to order every test.",
+    "Dates are the dates stored in HealthDB unless a collection/report distinction is explicitly stated. Laboratory labels are anonymised. Original private pathology PDFs are retained locally, not attached to this public dashboard.",
+    "Patient observations, clinician/report findings and discussion questions are labelled separately. Explanatory theories in personal notes have not been promoted to diagnoses.",
+    "Selected results use the current lab snapshot. October source comments and thresholds were checked against the reports. Other stored bounds are shown as bounds, without inventing inclusive/exclusive limits.",
+    "No current routine bacterial urine culture or current lower-airway sputum culture was found in the reviewed HealthDB results. This is a record gap, not proof that no such testing has ever been performed."
+  ],
+  "resultCount": 115,
+  "markerCount": 113,
+  "octoberResultCount": 32
+}
