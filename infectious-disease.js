@@ -15,7 +15,7 @@ async function loadInfectiousDisease(labs) {
       if (matches?.length !== 1) throw new Error("A selected result needs review");
       return { ...row, marker, result: matches[0] };
     }) }));
-    const filters = [["all", "All findings"], ["pain", "Soft-tissue pain"], ["throat", "Throat phlegm"], ["urine", "Nocturia"], ["gut", "Gut"], ["other", "Other symptoms"]];
+    const filters = [["all", "All findings"], ["pain", "Soft-tissue pain"], ["throat", "Throat phlegm"], ["urine", "Nocturia"], ["gut", "Gut"], ["bone", "Low bone density"], ["other", "Other symptoms"]];
     let activeFilter = "all";
     let allOpen = false;
 

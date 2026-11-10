@@ -58,6 +58,16 @@
       "refs": [
         "longcovid"
       ]
+    },
+    {
+      "id": "bone",
+      "title": "Low bone density",
+      "label": "DXA · April 2026",
+      "text": "My April 2026 DXA showed low bone density for my age: lumbar spine Z-score −3.0, femoral neck −2.6 and total hip −2.0. I have no documented fragility fractures.",
+      "question": "Could this share an underlying cause with my soft-tissue problems? Is there anything in my infection history or results that would help explain it?",
+      "refs": [
+        "bone-density"
+      ]
     }
   ],
   "context": [
@@ -862,7 +872,8 @@
           "date": "2026-09-28",
           "source": "Laboratory A",
           "tags": [
-            "pain"
+            "pain",
+            "bone"
           ],
           "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
           "provenance": "HealthDB recorded result"
@@ -872,7 +883,8 @@
           "date": "2026-06-19",
           "source": "Laboratory A",
           "tags": [
-            "pain"
+            "pain",
+            "bone"
           ],
           "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
           "provenance": "HealthDB recorded result"
@@ -882,7 +894,8 @@
           "date": "2026-09-28",
           "source": "Laboratory A",
           "tags": [
-            "pain"
+            "pain",
+            "bone"
           ],
           "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
           "provenance": "HealthDB recorded result"
@@ -892,7 +905,8 @@
           "date": "2026-09-28",
           "source": "Laboratory A",
           "tags": [
-            "pain"
+            "pain",
+            "bone"
           ],
           "note": "Bone and mineral context alongside low bone density. These are not diagnostic markers of infection.",
           "provenance": "HealthDB recorded result"
@@ -1476,6 +1490,10 @@
     }
   ],
   "sources": {
+    "bone-density": {
+      "label": "ISCD · Bone-density interpretation",
+      "url": "https://iscd.org/official-positions-2023/"
+    },
     "reactive": {
       "label": "NIAMS · Reactive arthritis",
       "url": "https://www.niams.nih.gov/health-topics/reactive-arthritis"
